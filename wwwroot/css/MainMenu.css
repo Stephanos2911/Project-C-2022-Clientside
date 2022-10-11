@@ -1,0 +1,69 @@
+﻿Inside {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 30%;
+    left: 20%;
+    border: solid;
+    border-color: black;
+}
+
+Outside {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 30%;
+    left: 60%;
+    border: solid;
+    border-color: black;
+}
+
+.treeicon {
+    width: 210px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.houseicon {
+    width: 150px;
+    position: absolute;
+    top: 12%;
+    left: 20%;
+}
+
+span.text {
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    font-size: xx-large;
+    position: absolute;
+    left: 21.2%;
+    bottom: 31%;
+    /*font-size: larger;
+    position: absolute;
+    left: 24.3%;
+    top: 65%;*/ 
+}
+
+span.text1 {
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    font-size: xx-large;
+    position: absolute;
+    left: 61.5%;
+    bottom: 31%;
+}
+
+Inside:hover {
+    opacity: 0.7;
+    transition: 0.7s;
+}
+
+Outside:hover {
+    opacity: 0.7;
+    transition: 0.7s;
+}
