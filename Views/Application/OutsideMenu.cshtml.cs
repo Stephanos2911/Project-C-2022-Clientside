@@ -1,12 +1,11 @@
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace WebApplication2.Pages
+namespace UserApplication.Views.Shared;
+
+public class OutsideMenu : PageModel
 {
-    public class OutsideMenuModel : PageModel
+    public void OnGet()
     {
-        public void OnGet()
-        {
-        }
+        
     }
 }

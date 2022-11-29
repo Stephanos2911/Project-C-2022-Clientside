@@ -1,13 +1,14 @@
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace WebApplication2.Pages.Forms
+namespace UserApplication.Views.Shared;
+
+public class Insideproductmenu : PageModel
 {
-    public class InsideproductmenuModel : PageModel
-    {
-        public void OnGet()
-        {
-        }
+	public void OnGet()
+	{
+        
+	}
+}
   //      public IActionResult Onpost()
 		//{
   //          if (ModelState.IsValid == false)
@@ -17,5 +18,4 @@ namespace WebApplication2.Pages.Forms
 
   //          return RedirectToPage("/Index");
 		//}
-    }
-}
+
