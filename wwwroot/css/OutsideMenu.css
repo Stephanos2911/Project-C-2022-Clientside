@@ -1,4 +1,4 @@
-﻿Back {
+﻿.Back {
     width: 212px;
     height: 225px;
     border-radius: 10px;
@@ -10,7 +10,7 @@
     border-color: black;
 }
 
-GPS {
+.GPS {
     width: 212px;
     height: 225px;
     border-radius: 10px;
@@ -20,48 +20,6 @@ GPS {
     left: 40%;
     border: solid;
 }
-
-/*o {
-    width: 212px;
-    height: 225px;
-    border-radius: 10px;
-    background-color: #Ffcba4;
-    position: fixed;
-    bottom: 50%;
-    left: 70%;
-}
-
-b {
-    width: 212px;
-    height: 225px;
-    border-radius: 10px;
-    background-color: #Ffcba4;
-    position: fixed;
-    bottom: 5%;
-    left: 10%;
-}
-
-c {
-    width: 212px;
-    height: 225px;
-    border-radius: 10px;
-    background-color: #Ffcba4;
-    position: fixed;
-    bottom: 5%;
-    left: 40%;
-}
-
-v {
-    width: 212px;
-    height: 225px;
-    border-radius: 10px;
-    background-color: #Ffcba4;
-    position: fixed;
-    bottom: 5%;
-    left: 70%;
-}
-
-*/
 
 .backarrow {
     width: 10px;
@@ -81,17 +39,17 @@ v {
     margin-right: auto;
 }
 
-Back:hover {
+.Back:hover {
     opacity: 0.7;
     transition: 0.7s;
 }
 
-GPS:hover {
+.GPS:hover {
     opacity: 0.7;
     transition: 0.7s;
 }
 
-span.text1 {
+.span.text1 {
     font-family: "Times New Roman", Times, serif;
     font-size: xx-large;
     position: absolute;
@@ -100,7 +58,7 @@ span.text1 {
     color: black
 }
 
-span.text2 {
+.span.text2 {
     font-family: "Times New Roman", Times, serif;
     font-size: xx-large;
     position: absolute;

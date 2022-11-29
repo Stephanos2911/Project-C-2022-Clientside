@@ -1,4 +1,4 @@
-﻿Inside {
+﻿.Inside {
     width: 250px;
     height: 250px;
     border-radius: 10px;
@@ -10,16 +10,22 @@
     border-color: black;
 }
 
-Outside {
+.Outside {
     width: 250px;
     height: 250px;
     border-radius: 10px;
     background-color: #Ffcba4;
-    position: fixed;
     bottom: 30%;
     left: 60%;
     border: solid;
     border-color: black;
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    font-size: xx-large;
+    position: absolute;
+    left: 61.5%;
+    bottom: 31%;
+    
 }
 
 .treeicon {
@@ -36,20 +42,21 @@ Outside {
     left: 20%;
 }
 
-span.text {
+.span.text {
     font-family: "Times New Roman", Times, serif;
     color: black;
     font-size: xx-large;
-    position: absolute;
     left: 21.2%;
     bottom: 31%;
+    position: center;
+    
     /*font-size: larger;
     position: absolute;
     left: 24.3%;
     top: 65%;*/ 
 }
 
-span.text1 {
+.span.text1 {
     font-family: "Times New Roman", Times, serif;
     color: black;
     font-size: xx-large;
@@ -58,12 +65,12 @@ span.text1 {
     bottom: 31%;
 }
 
-Inside:hover {
+.Inside:hover {
     opacity: 0.7;
     transition: 0.7s;
 }
 
-Outside:hover {
+.Outside:hover {
     opacity: 0.7;
     transition: 0.7s;
 }

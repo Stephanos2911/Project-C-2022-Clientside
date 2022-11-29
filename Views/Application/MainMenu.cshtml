@@ -1,20 +1,20 @@
 ﻿
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/MainMenu.css">
+    <link rel="stylesheet" type="text/css" href="~/css/MainMenu.css">
 </head>
 <body>
-    <a asp-action="Insideproductmenu" asp-controller="Application">
-        <Inside>
-            <img class = "houseicon" src="~/img/houseicon.png"/>
-        </Inside>
+    <a asp-action="Insideproductmenu" asp-controller="Application" class="Inside">
+        
+        <img class = "houseicon" src="~/img/houseicon.png"/>
+        Binnenproducten
     </a>
-    <a href = "/OutsideMenu">
-        <Outside>
-            <img class = "treeicon" src="~/img/treesicon.png"/>
-        </Outside>
+    <a asp-action="OutsideMenu" asp-controller="Application" class="Outside">
+        
+        <img class = "treeicon" src="~/img/treesicon.png"/>
+        Buitenproducten
+        
     </a>
-    <p><span class="text">Binnenproducten</span></p>
-    <p><span class="text1">Buitenproducten</span></p>
+
 </body>
 </html>
