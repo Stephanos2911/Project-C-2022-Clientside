@@ -23,7 +23,7 @@ namespace UserApplication.Controllers
             return View();
         }
 
-        public IActionResult InsideMenu()
+        public IActionResult Insideproductmenu()
         {
             return View();
         }

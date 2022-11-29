@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\css\InsideMenu.css" />
+    <None Include="wwwroot\css\OutsideMenu.css" />
+  </ItemGroup>
+
 </Project>
