@@ -1,0 +1,110 @@
+﻿Back {
+    width: 212px;
+    height: 225px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 50%;
+    left: 10%;
+    border: solid;
+    border-color: black;
+}
+
+GPS {
+    width: 212px;
+    height: 225px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 50%;
+    left: 40%;
+    border: solid;
+}
+
+/*o {
+    width: 212px;
+    height: 225px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 50%;
+    left: 70%;
+}
+
+b {
+    width: 212px;
+    height: 225px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 5%;
+    left: 10%;
+}
+
+c {
+    width: 212px;
+    height: 225px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 5%;
+    left: 40%;
+}
+
+v {
+    width: 212px;
+    height: 225px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 5%;
+    left: 70%;
+}
+
+*/
+
+.backarrow {
+    width: 10px;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    /*
+    display: block;
+    margin-left: auto;
+    margin-right: auto;*/
+}
+
+.gpsicon {
+    width: 175px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+Back:hover {
+    opacity: 0.7;
+    transition: 0.7s;
+}
+
+GPS:hover {
+    opacity: 0.7;
+    transition: 0.7s;
+}
+
+span.text1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+    position: absolute;
+    left: 35%;
+    bottom: 2.5%;
+    color: black
+}
+
+span.text2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+    position: absolute;
+    left: 35%;
+    bottom: 2.5%;
+    color: black
+}
