@@ -8,6 +8,15 @@
     left: 20%;
     border: solid;
     border-color: black;
+    background-image: url("/img/houseicon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 175px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+    color: black;
+    line-height: 450px;
+    text-align: center;
 }
 
 .Outside {
@@ -15,16 +24,20 @@
     height: 250px;
     border-radius: 10px;
     background-color: #Ffcba4;
+    position: fixed;
     bottom: 30%;
     left: 60%;
     border: solid;
     border-color: black;
+    background-image: url("/img/treesicon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
     font-family: "Times New Roman", Times, serif;
-    color: black;
     font-size: xx-large;
-    position: absolute;
-    left: 61.5%;
-    bottom: 31%;
+    color: black;
+    line-height: 450px;
+    text-align: center;
     
 }
 
@@ -42,28 +55,7 @@
     left: 20%;
 }
 
-.span.text {
-    font-family: "Times New Roman", Times, serif;
-    color: black;
-    font-size: xx-large;
-    left: 21.2%;
-    bottom: 31%;
-    position: center;
-    
-    /*font-size: larger;
-    position: absolute;
-    left: 24.3%;
-    top: 65%;*/ 
-}
 
-.span.text1 {
-    font-family: "Times New Roman", Times, serif;
-    color: black;
-    font-size: xx-large;
-    position: absolute;
-    left: 61.5%;
-    bottom: 31%;
-}
 
 .Inside:hover {
     opacity: 0.7;

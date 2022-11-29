@@ -1,4 +1,5 @@
-﻿Back {
+﻿
+.Back {
     width: 212px;
     height: 225px;
     border-radius: 10px;
@@ -12,9 +13,14 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 175px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+    color: black;
+    line-height: 380px;
+    text-align: center;
 }
 
-Kitchen {
+.Kitchen {
     width: 212px;
     height: 225px;
     border-radius: 10px;
@@ -23,9 +29,19 @@ Kitchen {
     bottom: 50%;
     left: 40%;
     border: solid;
+    border-color: black;
+    background-image: url("/img/kitchenicon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 175px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+    color: black;
+    line-height: 380px;
+    text-align: center;
 }
 
-Bathroom {
+.Bathroom {
     width: 212px;
     height: 225px;
     border-radius: 10px;
@@ -34,9 +50,19 @@ Bathroom {
     bottom: 50%;
     left: 70%;
     border: solid;
+    border-color: black;
+    background-image: url("/img/bathroomicon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+    color: black;
+    line-height: 380px;
+    text-align: center;
 }
 
-Livingroom {
+.Livingroom {
     width: 212px;
     height: 225px;
     border-radius: 10px;
@@ -45,9 +71,19 @@ Livingroom {
     bottom: 5%;
     left: 10%;
     border: solid;
+    border-color: black;
+    background-image: url("/img/livingroomicon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 125px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+    color: black;
+    line-height: 380px;
+    text-align: center;
 }
 
-Bedroom {
+.Bedroom {
     width: 212px;
     height: 225px;
     border-radius: 10px;
@@ -56,9 +92,19 @@ Bedroom {
     bottom: 5%;
     left: 40%;
     border: solid;
+    border-color: black;
+    background-image: url("/img/bedroomicon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+    color: black;
+    line-height: 380px;
+    text-align: center;
 }
 
-Health {
+.Health {
     width: 212px;
     height: 225px;
     border-radius: 10px;
@@ -67,125 +113,45 @@ Health {
     bottom: 5%;
     left: 70%;
     border: solid;
-}
-
-.backarrow {
-    width: 175px;
-    position: absolute;
-    left: 5%;
-    top: 15%;
-}
-
-.kitchenicon {
-    width: 175px;
-    position: absolute;
-    left: 7%;
-    top: 0.01%;
-}
-
-.bathroomicon {
-    width: 125px;
-    position: absolute;
-    left: 20%;
-    top: 10%;
-}
-
-.bedroomicon {
-    width: 150px;
-    position: absolute;
-    left: 14%;
-    top: 15%;
-}
-
-.livingicon {
-    width: 150px;
-    position: absolute;
-    left: 12%;
-    top: 5%;
-}
-
-.healthicon {
-    width: 125px;
-    position: absolute;
-    left: 20%;
-    top: 15%;
-}
-
-span.text1 {
+    border-color: black;
+    background-image: url("/img/healthicon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 125px;
     font-family: "Times New Roman", Times, serif;
     font-size: xx-large;
-    position: absolute;
-    left: 32%;
-    bottom: 2.5%;
     color: black;
+    line-height: 380px;
+    text-align: center;
 }
 
-span.text2 {
-    font-family: "Times New Roman", Times, serif;
-    font-size: xx-large;
-    position: absolute;
-    left: 27%;
-    bottom: 2.5%;
-}
 
-span.text3 {
-    font-family: "Times New Roman", Times, serif;
-    font-size: xx-large;
-    position: absolute;
-    left: 19%;
-    bottom: 2.5%;
-}
-
-span.text4 {
-    font-family: "Times New Roman", Times, serif;
-    font-size: xx-large;
-    position: absolute;
-    left: 16%;
-    bottom: 2.5%;
-}
-
-span.text5 {
-    font-family: "Times New Roman", Times, serif;
-    font-size: xx-large;
-    position: absolute;
-    left: 15%;
-    bottom: 2.5%;
-}
-
-span.text6 {
-    font-family: "Times New Roman", Times, serif;
-    font-size: xx-large;
-    position: absolute;
-    left: 14%;
-    bottom: 2.5%;
-}
-
-Back:hover {
+.Back:hover {
     opacity: 0.7;
     transition: 0.7s;
 }
 
-Kitchen:hover {
+.Kitchen:hover {
     opacity: 0.7;
     transition: 0.7s;
 }
 
-Bathroom:hover {
+.Bathroom:hover {
     opacity: 0.7;
     transition: 0.7s;
 }
 
-Livingroom:hover {
+.Livingroom:hover {
     opacity: 0.7;
     transition: 0.7s;
 }
 
-Bedroom:hover {
+.Bedroom:hover {
     opacity: 0.7;
     transition: 0.7s;
 }
 
-Health:hover {
+.Health:hover {
     opacity: 0.7;
     transition: 0.7s;
 }
