@@ -83,11 +83,10 @@ header {
 }
 
 
-b {
+.button1 {
     background-color: #F9BE79;
-    border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 30px 35px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -96,7 +95,8 @@ b {
     cursor: pointer;
     position: absolute;
     right: 760px;
-    bottom: 70px;
+    bottom: 60px;
+    border-radius: 10px
 }
 .borderpruductpaginavideo {
     position:absolute;
