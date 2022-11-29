@@ -4,20 +4,15 @@ using UserApplication.Models;
 
 namespace UserApplication.Controllers
 {
-    public class HomeController : Controller
+    public class ApplicationController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<ApplicationController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public ApplicationController(ILogger<ApplicationController> logger)
         {
             _logger = logger;
         }
-
-        public IActionResult Index()
-        {
-            return View();
-        }
-
+        
         public IActionResult OutsideMenu()
         {
             return View();
@@ -30,12 +25,11 @@ namespace UserApplication.Controllers
         {
             return View();
         }
-
-        public IActionResult Productbegin()
+        public IActionResult MainMenu()
         {
             return View();
         }
-
+        
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
