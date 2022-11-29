@@ -22,13 +22,16 @@ namespace UserApplication.Controllers
         {
             return View();
         }
-
+        public IActionResult Startpagina()
+        {
+            return View();
+        }
         public IActionResult Insideproductmenu()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Productbegin()
         {
             return View();
         }
