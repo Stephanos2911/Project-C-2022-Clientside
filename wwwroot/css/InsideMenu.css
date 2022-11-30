@@ -18,6 +18,7 @@
     color: black;
     line-height: 380px;
     text-align: center;
+    text-decoration: none;
 }
 
 .Kitchen {
@@ -39,6 +40,7 @@
     color: black;
     line-height: 380px;
     text-align: center;
+    text-decoration: none;
 }
 
 .Bathroom {
@@ -60,6 +62,7 @@
     color: black;
     line-height: 380px;
     text-align: center;
+
 }
 
 .Livingroom {
@@ -125,6 +128,29 @@
     text-align: center;
 }
 
+.Back:link {
+    text-decoration: none;
+}
+
+.Kitchen:link {
+    text-decoration: none;
+}
+
+.Bathroom:link {
+    text-decoration: none;
+}
+
+.Livingroom:link {
+    text-decoration: none;
+}
+
+.Bedroom:link {
+    text-decoration: none;
+}
+
+.Health:link {
+    text-decoration: none;
+}
 
 .Back:hover {
     opacity: 0.7;

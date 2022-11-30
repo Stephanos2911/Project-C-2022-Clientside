@@ -37,8 +37,15 @@
     font-size: xx-large;
     color: black;
     line-height: 450px;
-    text-align: center;
-    
+    text-align: center; 
+}
+
+.Inside:link {
+    text-decoration: none;
+}
+
+.Outside:link {
+    text-decoration: none;
 }
 
 .treeicon {
@@ -55,10 +62,8 @@
     left: 20%;
 }
 
-
-
 .Inside:hover {
-    opacity: 0.7;
+    color: white;
     transition: 0.7s;
 }
 
