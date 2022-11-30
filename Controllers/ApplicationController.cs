@@ -29,6 +29,9 @@ namespace UserApplication.Controllers
         {
             return View();
         }
-
+        public IActionResult ProductBegin()
+        {
+            return View();
+        }
     }
 }
