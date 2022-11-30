@@ -1,0 +1,97 @@
+html  {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+.borderbegin {
+    position:absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 50px;
+    margin:auto;
+    border: 12px solid #F9BE79 ;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10%;
+    background-color: #24252a;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav__links a,
+.cta,.cta1,
+.overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+}
+
+.nav__links li {
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: color 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #0088a9;
+}
+
+.cta {
+    padding: 10px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+}
+
+.cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+.cta1 {
+    padding: 35px 40px;
+    background-color: rgba(249, 190, 121, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+    position: center;
+    right: 750px;
+    bottom: 50px;
+}
+
+.cta1:hover {
+    background-color: rgba(249, 190, 121, 0.8);
+}
+
+
+.button1 {
+    background-color: #F9BE79;
+    color: white;
+    padding: 30px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: absolute;
+    right: 760px;
+    bottom: 60px;
+    border-radius: 10px
+}
