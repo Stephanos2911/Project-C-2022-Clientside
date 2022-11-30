@@ -8,6 +8,15 @@
     left: 10%;
     border: solid;
     border-color: black;
+    background-image: url("/img/backarrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 175px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+    color: black;
+    line-height: 380px;
+    text-align: center;
 }
 
 .GPS {
@@ -19,24 +28,16 @@
     bottom: 50%;
     left: 40%;
     border: solid;
-}
-
-.backarrow {
-    width: 10px;
-    position: absolute;
-    left: 5%;
-    top: 15%;
-    /*
-    display: block;
-    margin-left: auto;
-    margin-right: auto;*/
-}
-
-.gpsicon {
-    width: 175px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    border-color: black;
+    background-image: url("/img/gpsicon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 175px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+    color: black;
+    line-height: 380px;
+    text-align: center;
 }
 
 .Back:hover {
@@ -49,20 +50,3 @@
     transition: 0.7s;
 }
 
-.span.text1 {
-    font-family: "Times New Roman", Times, serif;
-    font-size: xx-large;
-    position: absolute;
-    left: 35%;
-    bottom: 2.5%;
-    color: black
-}
-
-.span.text2 {
-    font-family: "Times New Roman", Times, serif;
-    font-size: xx-large;
-    position: absolute;
-    left: 35%;
-    bottom: 2.5%;
-    color: black
-}

@@ -5,15 +5,11 @@
     <link rel="stylesheet" type="text/css" href="~/css/OutsideMenu.css">
 </head>
 <body>
-     <a href = "/Index">
-        <Back>
-            <img class = "backarrow" src="~/img/backarrow.png"/> 
-            <p><span class="text1">Terug</span></p>
-        </Back>
-    </a>
-    <GPS>
-        <img class = "gpsicon" src="~/img/gpsicon.png"/> 
-        <p><span class="text2">GPS</span></p>
-    </GPS>
+     <a asp-action="Insideproductmenu" asp-controller="Application" class="Back">
+             Terug
+         </a>
+    <a asp-action="Insideproductmenu" asp-controller="Application" class="GPS">
+            GPS
+        </a>
 </body>
 </html>
