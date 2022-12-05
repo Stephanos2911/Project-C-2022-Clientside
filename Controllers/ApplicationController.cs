@@ -6,10 +6,13 @@ namespace UserApplication.Controllers
 {
     public class ApplicationController : Controller
     {
+
+        private ApplicationDbContext _context;
         private readonly ILogger<ApplicationController> _logger;
 
-        public ApplicationController(ILogger<ApplicationController> logger)
+        public ApplicationController(ILogger<ApplicationController> logger, ApplicationDbContext context)
         {
+            _context = context;
             _logger = logger;
         }
         
@@ -32,6 +35,21 @@ namespace UserApplication.Controllers
         public IActionResult ProductBegin()
         {
             return View();
+        }
+
+        public IActionResult ProductOverzicht(string id) 
+        {
+            //all products with the specified room
+            var AllProductsofRoom = _context.Products.Where(x => x.Place == id).ToList();
+            
+            return View(AllProductsofRoom);
+        }
+
+        public IActionResult ProductPagina(Guid id)
+        {
+            Product CurrentProduct = _context.Products.Find(id);
+
+            return View(CurrentProduct);
         }
     }
 }

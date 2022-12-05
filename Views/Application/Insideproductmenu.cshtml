@@ -1,40 +1,43 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="~/css/InsideMenu.css">
 </head>
 <body>
 
-    <a asp-action="MainMenu" asp-controller="Application" class="Back">
+    <a asp-action="ProductOverzicht" asp-controller="Application" class="Back">
         <div>
             Terug
         </div>
     </a>
 
-    <a asp-action="ProductBegin" asp-controller="Application" class="Kitchen">
+    <a asp-action="ProductOverzicht" asp-controller="Application" class="Kitchen" asp-route-id="Keuken">
          <div class = "text2">
              Keuken
          </div>
     </a>
 
-   <a asp-action="MainMenu" asp-controller="Application" class="Bathroom">
+    <a asp-action="ProductOverzicht" asp-controller="Application" class="Bathroom" asp-route-id="Badkamer">
+        >
             <div class = "text3">
                 Badkamer
             </div>
    </a>            
 
-    <a asp-action="MainMenu" asp-controller="Application" class="Livingroom">
+    <a asp-action="ProductOverzicht" asp-controller="Application" class="Livingroom" asp-route-id="Woonkamer">
+        >
               <div class = "text4">
                        Woonkamer
               </div>
     </a>
-    <a asp-action="MainMenu" asp-controller="Application" class="Bedroom">
+    <a asp-action="ProductOverzicht" asp-controller="Application" class="Bedroom" asp-route-id="Slaapkamer">
+        >
                   <div class = "text5">
                        Slaapkamers
                   </div>
     </a>
-    <a asp-action="MainMenu" asp-controller="Application" class="Health">
+    <a asp-action="ProductOverzicht" asp-controller="Application" class="Health" asp-route-id="Gezondheid">
+        >
         <div class = "text6">
             Gezondheid
         </div>                     
