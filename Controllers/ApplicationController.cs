@@ -33,5 +33,10 @@ namespace UserApplication.Controllers
         {
             return View();
         }
+
+        public IActionResult ContactPage()
+        {
+            return View();
+        }
     }
 }
