@@ -1,0 +1,75 @@
+﻿.Back {
+    width: 212px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 70%;
+    left: 5%;
+    border: solid;
+    border-color: black;
+    background-image: url("/img/backarrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 175px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+    color: black;
+    line-height: 350px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contact {
+    position: fixed;
+    bottom: 70%;
+    left: 40%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+}
+
+.Telefoonnummer {
+    position: fixed;
+    bottom: 60%;
+    left: 55%;
+    display: block;
+    width: 350px;
+    height: 75px;
+    resize: none;
+    padding: 20px;
+    font-size: large;
+}
+
+.E-mail {
+    position: fixed;
+    bottom: 60%;
+    left: 30%;
+    display: block;
+    width: 350px;
+    height: 75px;
+    resize: none;
+    padding: 20px;
+    font-size: large;
+}
+
+textarea {
+    position: fixed;
+    bottom: 3%;
+    left: 9%;
+    display: block;
+    width: 1600px;
+    height: 500px;
+    resize: none;
+    padding: 20px;
+    font-size: xx-large;
+}
+
+.verstuurknop {
+    width: 100px;
+    height: 50px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 60%;
+    left: 75%;
+    font-size: large
+}

@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/ContactPage.css">
+</head>
+<body>
+    <a asp-action="StartPagina" asp-controller="Application" class="Back">
+         <div>
+             Terug
+         </div>
+     </a>
+    <p class = "contact"> Telefoonnummer: 010 – 244 8240 <br>
+        Locatie: Schommelstraat 69 <br>
+        Postcode: 3035 CG Rotterdam <br>
+    </p>
+   <!-- <form action= "1033533@hr.nl" method = "POST">
+        
+    </form> -->
+        <!--<a href = "mailto: 1033533@hr.nl">
+
+        </a>-->
+    <textarea class = "E-mail" type = "Naam" placeholder = "Type hier uw naam..." required></textarea>
+    <textarea class = "Telefoonnummer" type = "Telefoonnummer" placeholder = "Type hier uw telefoonnummer..." required></textarea>
+    <textarea id = "my-text" rows = 5 placeholder = "Type hier uw bericht..."></textarea>
+        <a asp-action="StartPagina" asp-controller="Application">
+            <input type = "submit" class = "verstuurknop"></input> 
+        </a>
+    <div class = "container">
+    </div>
+</body>
+</html>
+

@@ -1,27 +1,27 @@
 ﻿.Inside {
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
     border-radius: 10px;
     background-color: #Ffcba4;
     position: fixed;
     bottom: 30%;
-    left: 20%;
+    left: 25%;
     border: solid;
     border-color: black;
     background-image: url("/img/houseicon.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 175px;
+    background-size: 250px;
     font-family: "Times New Roman", Times, serif;
-    font-size: xx-large;
+    font-size: 50px;
     color: black;
-    line-height: 450px;
+    line-height: 700px;
     text-align: center;
 }
 
 .Outside {
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
     border-radius: 10px;
     background-color: #Ffcba4;
     position: fixed;
@@ -32,11 +32,11 @@
     background-image: url("/img/treesicon.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 250px;
+    background-size: 350px;
     font-family: "Times New Roman", Times, serif;
-    font-size: xx-large;
+    font-size: 50px;
     color: black;
-    line-height: 450px;
+    line-height: 700px;
     text-align: center; 
 }
 
@@ -55,12 +55,12 @@
     margin-right: auto;
 }
 
-.houseicon {
+/*.houseicon {
     width: 150px;
     position: absolute;
     top: 12%;
     left: 20%;
-}
+}*/
 
 .Inside:hover {
     color: white;
@@ -68,6 +68,6 @@
 }
 
 .Outside:hover {
-    opacity: 0.7;
+    color: white;
     transition: 0.7s;
 }

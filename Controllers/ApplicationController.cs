@@ -37,6 +37,11 @@ namespace UserApplication.Controllers
             return View();
         }
 
+        public IActionResult ContactPage()
+        {
+            return View();
+        }
+
         public IActionResult ProductOverzicht(string id) 
         {
             //all products with the specified room
