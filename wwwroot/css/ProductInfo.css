@@ -10,6 +10,24 @@
     margin:60px;
     border: 12px solid #F9BE79 ;
 }
+.square img{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    margin: 50px;
+    object-position: center;
+}
+.square h1{
+    position: absolute;
+    left:300px;
+    line-height: 100px;
+}
+.square h2{
+    position: absolute;
+    left:300px;
+    line-height: 165px;
+}
+
 .terug {
     width: 275px;
     height: 250px;
