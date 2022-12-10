@@ -32,13 +32,10 @@ namespace UserApplication.Controllers
         {
             return View();
         }
-        public IActionResult ProductBegin()
+        public IActionResult ProductInfo(Guid id)
         {
-            return View();
-        }
-        public IActionResult ProductInfo()
-        {
-            return View();
+            Product CurrentProduct = _context.Products.Find(id);
+            return View(CurrentProduct);
         }
 
         [HttpGet]
@@ -67,7 +64,7 @@ namespace UserApplication.Controllers
         {
             Product CurrentProduct = _context.Products.Find(id);
 
-            return View(CurrentProduct);
+            return View(_context.Products.SingleOrDefault(x => x.Name == "Kantelbare Waterkoker"));
         }
     }
 }

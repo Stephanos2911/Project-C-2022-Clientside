@@ -1,10 +1,38 @@
-﻿@model UserApplication.Models.Product
+﻿@model Product
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/ProductBegin.css">
+</head>
+<body>
+    <div class="text-center">
+        <iframe 
+            class="borderpruductpaginavideo" width="1305" height="575" src="@Model.VideoLink" title="Beginvideo SOL" borderpruductpaginavideo="0">
+        </iframe>
+    </div>
 
-@{
 
-}
+    <a asp-action="ProductPagina" asp-controller="Application" class="terug">
+        <div>
+            Terug
+        </div>
+    </a>
 
 
-welcome @Model.Name
+    <a asp-action="ProductInfo" asp-controller="Application" class="info" asp-route-id="@Model.Id">
+        <div>
+            Info
+        </div>
+    </a>
+    <a asp-action="ProductPagina" asp-controller="Application" class="gratis">
+    <div>
+        Gratis
+    </div>
+</a>
+    <a asp-action="ProductPagina" asp-controller="Application" class="favorieten">
+    <div>
+        Favorieten
+    </div>
+    </a>
 
-@Model.Description
+</body>
+</html>

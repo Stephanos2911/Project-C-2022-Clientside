@@ -1,35 +1,39 @@
+@model Product
+@{
+    string ImageDataUrl = string.Format("data:image/jpg;base64,{0}", Convert.ToBase64String(Model.ProductImage));
+}
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="~/css/ProductInfo.css">
 </head>
 <body>
 <div class="square">
-    <img src="~/img/kantelbare.jpeg" alt="Kantelbare" />
-    <h1>Kantelbare Waterkoker</h1>
+    <img src="@ImageDataUrl" alt="Kantelbare" />
+    <h1>@Model.Name</h1>
     <h2>Levertijd : 3-5 Werkdagen</h2>
     
     
     
 </div>
 
-<a asp-action="ProductBegin" asp-controller="Application" class="terug">
+<a asp-action="ProductPagina" asp-controller="Application" class="terug">
     <div>
         Terug
     </div>
 </a>
 
 
-<a asp-action="ProductBegin" asp-controller="Application" class="info">
+    <a asp-action="ProductPagina" asp-controller="Application" class="info">
     <div>
         Info
     </div>
 </a>
-<a asp-action="ProductBegin" asp-controller="Application" class="gratis">
+    <a asp-action="ProductPagina" asp-controller="Application" class="gratis">
     <div>
         Gratis
     </div>
 </a>
-<a asp-action="ProductBegin" asp-controller="Application" class="favorieten">
+    <a asp-action="ProductPagina" asp-controller="Application" class="favorieten">
     <div>
         Favorieten
     </div>
