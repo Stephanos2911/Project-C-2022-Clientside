@@ -1,18 +1,21 @@
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="~/css/ProductInfo.css">
+    <link rel="stylesheet" type="text/css" href="~/css/ProductOverzicht.css">
 </head>
 <body>
+<div>
 <a asp-action="MainMenu" asp-controller="Application" class="Back">
-    <div>
+    <div class="text1">
         Terug
     </div>
 </a>
-
-<a asp-action="ProductBegin" asp-controller="Application" class="Kitchen" asp-route-id="Keuken">
-    <div class = "text2">
-        Keuken
-    </div>
-</a>
-
+</div>
+<div class = Product1>
+    <a asp-action="ProductBegin" asp-controller="Application" class="ProductBox" asp-route-id="Keuken">
+        <img src="~/img/kantelbare.jpeg" alt="Kantelbare" />
+        <div class="text1">
+            Kantelbare
+        </div>
+    </a>
+</div>
 </body>
