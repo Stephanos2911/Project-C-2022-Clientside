@@ -36,6 +36,10 @@ namespace UserApplication.Controllers
         {
             return View();
         }
+        public IActionResult ProductInfo()
+        {
+            return View();
+        }
 
         public IActionResult ContactPage()
         {
