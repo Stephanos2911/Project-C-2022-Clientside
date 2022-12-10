@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model UserApplication.Models.Message
+<!DOCTYPE html>
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="~/css/ContactPage.css">
@@ -19,14 +20,37 @@
         <!--<a href = "mailto: 1033533@hr.nl">
 
         </a>-->
-    <textarea class = "E-mail" type = "Naam" placeholder = "Type hier uw naam..." required></textarea>
+    <form method="post" asp-action="ContactPage" asp-controller="Application">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input asp-for="NameOfSender" class="form-control" placeholder="Type hier uw naam..." />
+        <span asp-validation-for="NameOfSender" class="text-danger"></span>
+         
+        <input asp-for="PhoneNumber" class="form-control" placeholder="Type hier uw telefoonnummer..." />
+        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+
+        <input asp-for="MessageBody" class="form-control" placeholder="Type hier uw bericht..." />
+        <span asp-validation-for="MessageBody" class="text-danger"></span>
+
+
+        <input type="submit" value="Verstuur" class="verstuurknop" />
+    </form>
+
+
+  @*  <textarea class = "E-mail" type = "Naam" placeholder = "Type hier uw naam..." required></textarea>
     <textarea class = "Telefoonnummer" type = "Telefoonnummer" placeholder = "Type hier uw telefoonnummer..." required></textarea>
-    <textarea id = "my-text" rows = 5 placeholder = "Type hier uw bericht..."></textarea>
-        <a asp-action="StartPagina" asp-controller="Application">
+    <textarea id = "my-text" rows = 5 placeholder = "Type hier uw bericht..."></textarea>*@
+@*        <a asp-action="StartPagina" asp-controller="Application">
             <input type = "submit" class = "verstuurknop"></input> 
-        </a>
-    <div class = "container">
-    </div>
+        </a>*@
+@*    <div class = "container">
+    </div>*@
 </body>
 </html>
 
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

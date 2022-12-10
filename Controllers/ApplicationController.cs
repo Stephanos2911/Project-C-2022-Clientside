@@ -36,10 +36,23 @@ namespace UserApplication.Controllers
         {
             return View();
         }
+        public IActionResult ProductInfo()
+        {
+            return View();
+        }
 
+        [HttpGet]
         public IActionResult ContactPage()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult ContactPage(Message message)
+        {
+            _context.Messages.Add(message);
+            _context.SaveChanges();
+            return RedirectToAction("ContactPage");
         }
 
         public IActionResult ProductOverzicht(string id) 

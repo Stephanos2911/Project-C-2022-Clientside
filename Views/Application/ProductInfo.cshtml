@@ -1,19 +1,39 @@
-@page
-@model UserApplication.Views.Application.ProductInfo
-
-@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
 <html>
 <head>
-    <title></title>
+    <link rel="stylesheet" type="text/css" href="~/css/ProductInfo.css">
 </head>
 <body>
-<div>
+<div class="square">
+    <img src="~/img/kantelbare.jpeg" alt="Kantelbare" />
+    <h1>Kantelbare Waterkoker</h1>
+    <h2>Levertijd : 3-5 Werkdagen</h2>
+    
+    
     
 </div>
+
+<a asp-action="ProductBegin" asp-controller="Application" class="terug">
+    <div>
+        Terug
+    </div>
+</a>
+
+
+<a asp-action="ProductBegin" asp-controller="Application" class="info">
+    <div>
+        Info
+    </div>
+</a>
+<a asp-action="ProductBegin" asp-controller="Application" class="gratis">
+    <div>
+        Gratis
+    </div>
+</a>
+<a asp-action="ProductBegin" asp-controller="Application" class="favorieten">
+    <div>
+        Favorieten
+    </div>
+</a>
+
 </body>
 </html>

@@ -1,0 +1,115 @@
+
+.square {
+    width: 1305px;
+    height: 575px;
+    position:absolute;
+    right: 0;
+    left: 150px;
+    top: 0;
+    bottom: 0;
+    margin:60px;
+    border: 12px solid #F9BE79 ;
+}
+.square img{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    margin: 50px;
+    object-position: center;
+}
+.square h1{
+    position: absolute;
+    left:300px;
+    line-height: 100px;
+}
+.square h2{
+    position: absolute;
+    left:300px;
+    line-height: 165px;
+}
+
+.terug {
+    width: 275px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 5%;
+    margin-left: 200px;
+    border: solid;
+    border-color: black;
+    background-image: url("/img/backarrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 175px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+    color: black;
+    line-height: 445px;
+    text-align: center;
+}
+.terug:hover {
+    background-color: rgba(249, 190, 121, 0.5);
+}
+.info {
+    width: 275px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 5%;
+    left: 54%;
+    border: solid;
+    border-color: black;
+    background-image: url("/img/info.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+    color: black;
+    line-height: 445px;
+    text-align: center;
+}
+.gratis {
+    width: 275px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 5%;
+    left: 74%;
+    border: solid;
+    border-color: black;
+    background-image: url("/img/gratis.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+    color: black;
+    line-height: 445px;
+    text-align: center;
+
+}
+.favorieten {
+    width: 275px;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 5%;
+    left: 34%;
+    border: solid;
+    border-color: black;
+    background-image: url("/img/FavorietZonder.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+    color: black;
+    line-height: 445px;
+    text-align: center;
+
+}
