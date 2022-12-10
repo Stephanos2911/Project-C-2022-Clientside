@@ -24,6 +24,10 @@ namespace UserApplication.Controllers
         {
             return View();
         }
+        public IActionResult ProductenOverzicht()
+        {
+            return View();
+        }
         public IActionResult Insideproductmenu()
         {
             return View();
