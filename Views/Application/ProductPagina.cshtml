@@ -10,8 +10,7 @@
         </iframe>
     </div>
 
-
-    <a asp-action="ProductPagina" asp-controller="Application" class="terug">
+    <a asp-action="ProductenOverzicht" asp-controller="Application" class="terug" asp-route-id="@Model.Place">
         <div>
             Terug
         </div>
@@ -27,10 +26,14 @@
     <div>
         Gratis
     </div>
-</a>
+    </a>
     <a asp-action="ProductPagina" asp-controller="Application" class="favorieten">
     <div>
         Favorieten
+@*        <script>
+            var SetIndexofItem = localStorage.Length;
+            localStorage.setItem(SetIndexofItem, '@Model.Id')
+        </script>*@
     </div>
     </a>
 

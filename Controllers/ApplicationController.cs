@@ -24,10 +24,6 @@ namespace UserApplication.Controllers
         {
             return View();
         }
-        public IActionResult ProductenOverzicht()
-        {
-            return View();
-        }
         public IActionResult Insideproductmenu()
         {
             return View();
@@ -56,19 +52,20 @@ namespace UserApplication.Controllers
             return RedirectToAction("ContactPage");
         }
 
-        public IActionResult ProductOverzicht(string id) 
+        [HttpGet]
+        public IActionResult ProductenOverzicht(int id) 
         {
             //all products with the specified room
-            var AllProductsofRoom = _context.Products.Where(x => x.Place == id).ToList();
+            var AllProductsofRoom = _context.Products.Where(x => x.Place == id);
             
             return View(AllProductsofRoom);
         }
 
+
         public IActionResult ProductPagina(Guid id)
         {
             Product CurrentProduct = _context.Products.Find(id);
-
-            return View(_context.Products.SingleOrDefault(x => x.Name == "Kantelbare Waterkoker"));
+            return View(CurrentProduct);
         }
     }
 }

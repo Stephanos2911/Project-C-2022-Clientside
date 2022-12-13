@@ -13,10 +13,9 @@
     <h2>Levertijd : 3-5 Werkdagen</h2>
     
     
-    
 </div>
 
-<a asp-action="ProductPagina" asp-controller="Application" class="terug">
+<a asp-action="ProductPagina" asp-controller="Application" class="terug" asp-route-id="@Model.Id">
     <div>
         Terug
     </div>
@@ -36,6 +35,7 @@
     <a asp-action="ProductPagina" asp-controller="Application" class="favorieten">
     <div>
         Favorieten
+
     </div>
 </a>
 
