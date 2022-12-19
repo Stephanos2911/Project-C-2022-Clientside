@@ -11,7 +11,7 @@
     background-image: url("/img/backarrow.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 200px;
+    background-size: 150px;
     font-family: "Times New Roman", Times, serif;
     font-size: 40px;
     color: black;
@@ -55,7 +55,7 @@
     background-image: url("/img/bathroomicon.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 200px;
+    background-size: 150px;
     font-family: "Times New Roman", Times, serif;
     font-size: 40px;
     color: black;
@@ -77,7 +77,7 @@
     background-image: url("/img/livingroomicon.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 200px;
+    background-size: 150px;
     font-family: "Times New Roman", Times, serif;
     font-size: 40px;
     color: black;
@@ -121,7 +121,7 @@
     background-image: url("/img/healthicon.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 200px;
+    background-size: 150px;
     font-family: "Times New Roman", Times, serif;
     font-size: 40px;
     color: black;
@@ -131,32 +131,43 @@
 }
 
 .Back:hover {
-    opacity: 0.7;
+    color: white;
     transition: 0.7s;
+    background-image: url("/img/wbackarrow.png");
 }
 
 .Kitchen:hover {
-    opacity: 0.7;
+    color: white;
     transition: 0.7s;
+    background-image: url("/img/wkitchenicon.png");
 }
 
 .Bathroom:hover {
-    opacity: 0.7;
+    color: white;
     transition: 0.7s;
+    background-image: url("/img/wbathroomicon.png");
 }
 
 .Livingroom:hover {
-    opacity: 0.7;
+    color: white;
     transition: 0.7s;
+    background-image: url("/img/wlivingroomicon.png");
 }
 
 .Bedroom:hover {
-    opacity: 0.7;
+    color: white;
     transition: 0.7s;
+    background-image: url("/img/wbedroomicon.png");
 }
 
 .Health:hover {
-    opacity: 0.7;
+    color: white;
     transition: 0.7s;
+    background-image: url("/img/whealthicon.png");
+}
+
+div {
+    width: 250px;
+    height: 280px;
 }
 
