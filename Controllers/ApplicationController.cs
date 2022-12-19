@@ -32,13 +32,10 @@ namespace UserApplication.Controllers
         {
             return View();
         }
-        public IActionResult ProductBegin()
+        public IActionResult ProductInfo(Guid id)
         {
-            return View();
-        }
-        public IActionResult ProductInfo()
-        {
-            return View();
+            Product CurrentProduct = _context.Products.Find(id);
+            return View(CurrentProduct);
         }
 
         [HttpGet]
@@ -55,18 +52,19 @@ namespace UserApplication.Controllers
             return RedirectToAction("ContactPage");
         }
 
-        public IActionResult ProductOverzicht(string id) 
+        [HttpGet]
+        public IActionResult ProductenOverzicht(int id) 
         {
             //all products with the specified room
-            var AllProductsofRoom = _context.Products.Where(x => x.Place == id).ToList();
+            var AllProductsofRoom = _context.Products.Where(x => x.Place == id);
             
             return View(AllProductsofRoom);
         }
 
+
         public IActionResult ProductPagina(Guid id)
         {
             Product CurrentProduct = _context.Products.Find(id);
-
             return View(CurrentProduct);
         }
     }

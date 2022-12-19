@@ -8,14 +8,14 @@ namespace UserApplication.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public double Price { get; set; }
-        public string Place { get; set; }
+        public int Place { get; set; }
         public string VideoLink { get; set; }
 
         //elk product heeft een lijst met meerdere leveranciers, voor nu kan die ook leeg zijn (Many to many)
         // https://www.learnentityframeworkcore.com/configuration/many-to-many-relationship-configuration
         public ICollection<Store>? Stores { get; set; }
 
-        ////every product has one image
+        //every product has one image
         public byte[] ProductImage { get; set; }
     }
 }

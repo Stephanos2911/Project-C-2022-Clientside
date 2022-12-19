@@ -1,0 +1,33 @@
+@model IEnumerable<Product>
+@{
+    var modelToList = Model.ToList();
+    List<string> imageDataURL = new List<string>();
+    foreach(Product product in Model)
+    {
+        imageDataURL.Add(string.Format("data:image/jpg;base64,{0}", Convert.ToBase64String(product.ProductImage)));
+    }
+}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/ProductOverzicht.css">
+</head>
+<body>
+<div>
+<a asp-action="MainMenu" asp-controller="Application" class="Back">
+    <div class="text1">
+        Terug
+    </div>
+</a>
+</div>
+    @for(int i =0; i< @Model.Count(); i++)
+    {
+            <div class = Product1>
+                     <a asp-action="ProductPagina" asp-controller="Application" class="ProductBox" asp-route-id="@modelToList[i].Id">
+            <img src="@imageDataURL[i]" alt="Kantelbare" />
+            <div class="text1">
+                    @modelToList[i].Name
+            </div>
+                    </a>
+            </div>
+    }
+</body>

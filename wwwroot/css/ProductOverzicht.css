@@ -1,0 +1,47 @@
+.*{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    color: black;
+}
+.Back {
+    width: 300px;
+    height: 330px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 55%;
+    left: 10%;
+    border: solid;
+    border-color: black;
+    background-image: url("/img/backarrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+}
+
+.ProductBox {
+    width: 300px;
+    height: 330px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 55%;
+    left: 40%;
+    border: solid;
+    border-color: black;
+}
+.text1{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    color: black;
+    line-height: 550px;
+    text-align: center;
+    text-decoration: none;
+}
+.Product1 img{
+    width: 120px;
+    position: absolute;
+    margin: 30px;
+    left: 20%;
+    object-position: center;
+}
