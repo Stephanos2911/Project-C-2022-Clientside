@@ -2,31 +2,49 @@
 .square {
     width: 1305px;
     height: 575px;
-    position:absolute;
+    position: absolute;
     right: 0;
     left: 150px;
     top: 0;
     bottom: 0;
-    margin:60px;
-    border: 12px solid #F9BE79 ;
+    margin: 60px;
+    border: 12px solid #F9BE79;
 }
-.square img{
+
+.kantelbare {
     width: 200px;
     height: 300px;
     position: absolute;
-    margin: 50px;
+    margin: 80px;
     object-position: center;
 }
-.square h1{
+
+.square h1 {
     position: absolute;
-    left:300px;
-    line-height: 100px;
+    left: 350px;
+    line-height: 250px;
 }
-.square h2{
+
+.square h2 {
     position: absolute;
-    left:300px;
-    line-height: 165px;
-    color:green;
+    left: 350px;
+    line-height: 340px;
+    color: green;
+}
+.square h3 {
+    position: absolute;
+    left: 750px;
+    line-height: 100px;
+    margin: 200px;
+    font-size: 75px;
+}
+.bollogo {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    margin: 400px;
+    right: 18%;
+    object-position: center;
 }
 
 .terug {
@@ -36,6 +54,7 @@
     background-color: #Ffcba4;
     position: fixed;
     bottom: 5%;
+    left: 4%; 
     margin-left: 200px;
     border: solid;
     border-color: black;
@@ -49,9 +68,11 @@
     line-height: 445px;
     text-align: center;
 }
+
 .terug:hover {
     background-color: rgba(249, 190, 121, 0.5);
 }
+
 .info {
     width: 275px;
     height: 250px;
@@ -72,6 +93,7 @@
     line-height: 445px;
     text-align: center;
 }
+
 .gratis {
     width: 275px;
     height: 250px;
@@ -91,8 +113,8 @@
     color: black;
     line-height: 445px;
     text-align: center;
-
 }
+
 .favorieten {
     width: 275px;
     height: 250px;
@@ -112,5 +134,4 @@
     color: black;
     line-height: 445px;
     text-align: center;
-
 }
