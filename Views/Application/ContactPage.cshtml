@@ -5,34 +5,31 @@
     <link rel="stylesheet" type="text/css" href="~/css/ContactPage.css">
 </head>
 <body>
-    <a asp-action="StartPagina" asp-controller="Application" class="Back">
+   <a asp-action="StartPagina" asp-controller="Application" class="Back">
          <div>
              Terug
          </div>
-     </a>
+    </a>
     <p class = "contact"> Telefoonnummer: 010 – 244 8240 <br>
         Locatie: Schommelstraat 69 <br>
         Postcode: 3035 CG Rotterdam <br>
     </p>
-   <!-- <form action= "1033533@hr.nl" method = "POST">
-        
-    </form> -->
-        <!--<a href = "mailto: 1033533@hr.nl">
 
-        </a>-->
+    <img src = "~/img/solicon.png" class = "sollogo"> 
+
     <form method="post" asp-action="ContactPage" asp-controller="Application">
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <input asp-for="NameOfSender" class="form-control" placeholder="Type hier uw naam..." />
-        <span asp-validation-for="NameOfSender" class="text-danger"></span>
+        <input asp-for="NameOfSender" class="Naam" placeholder="Type hier uw naam..."/> <!--form-control-->
+        <span asp-validation-for="NameOfSender" class="text-danger"></span> 
          
-        <input asp-for="PhoneNumber" class="form-control" placeholder="Type hier uw telefoonnummer..." />
+        <input asp-for="PhoneNumber" class="Telefoonnummer" placeholder="Type hier uw telefoonnummer..." />
         <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-
-        <input asp-for="MessageBody" class="form-control" placeholder="Type hier uw bericht..." />
+       
+        <input asp-for="MessageBody" class="textarea" placeholder="Type hier uw bericht..."/>
         <span asp-validation-for="MessageBody" class="text-danger"></span>
 
 
-        <input type="submit" value="Verstuur" class="verstuurknop" />
+        <input type="submit" value="Versturen" class="verstuurknop"/>
     </form>
 
 

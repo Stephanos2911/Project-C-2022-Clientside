@@ -65,9 +65,16 @@
 .Inside:hover {
     color: white;
     transition: 0.7s;
+    background-image: url("/img/whouseicon.png");
 }
 
 .Outside:hover {
     color: white;
     transition: 0.7s;
+    background-image: url("/img/wtreeicon.png");
+}
+
+div{
+    width: 400px;
+    height: 400px;
 }
