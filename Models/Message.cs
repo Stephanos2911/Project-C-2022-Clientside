@@ -15,6 +15,8 @@ namespace UserApplication.Models
         [Required(ErrorMessage = "veld is verplicht")]
         [DataType(DataType.PhoneNumber)]
         [Phone]
-        public int PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
+
+        public bool IsAnswered { get; set; }
     }
 }

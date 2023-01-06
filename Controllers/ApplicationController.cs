@@ -47,6 +47,7 @@ namespace UserApplication.Controllers
         [HttpPost]
         public IActionResult ContactPage(Message message)
         {
+            message.IsAnswered = false;
             _context.Messages.Add(message);
             _context.SaveChanges();
             return RedirectToAction("ContactPage");
