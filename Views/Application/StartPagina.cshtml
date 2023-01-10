@@ -1,96 +1,17 @@
-@model UserApplication.Models.Message
+
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="~/css/SP2.css">
+    <link rel="stylesheet" type="text/css" href="~/css/StartPagina.css">
 </head>
-    <p class = "text">Welkom op de SOL website</p>
-
-    @*<a asp-action="MainMenu" asp-controller="Application" class="Info">
-         <div class = "infodiv">
-             Info 
-         </div>
-    </a>*@
-
-    <a asp-action="MainMenu" asp-controller="Application" class="Verder">
-         <div class = "verdertext">
-             Klik hier om naar het hoofdmenu te gaan
-         </div>
-    </a>
-
-    <div class = "vertical"></div>
-
-   
-    <div class="center">
-        <input type="checkbox" id="click">
-    <label for ="click" class="Contact">Contact</label>
-
-    <div class="content">
-        <p class = "contacttext">Neem contact op met ons!</p>
-        <div class = "solinfo">
-                Telefoonnummer SOL: 010 – 244 8240 <br>
-                Locatie: Schommelstraat 69 <br>
-                Postcode: 3035 CG Rotterdam <br>
-        </div>
-
-        <p class = personalname>* Naam</p>
-        <p class = personalphone>* Telefoonnummer</p>
-        <p class = personalmessage>* Bericht</p>
-
-
-        <form method="post" asp-action="ContactPage" asp-controller="Application">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input asp-for="NameOfSender" class="Naam" placeholder="Type hier uw naam..."/> <!--form control-->
-            <span asp-validation-for="NameOfSender" class="text-danger"></span> 
-         
-            <input asp-for="PhoneNumber" class="Telefoonnummer" placeholder="Type hier uw telefoonnummer..." />
-            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-       
-            <input asp-for="MessageBody" class="textarea" placeholder="Type hier uw bericht..."/>
-            <span asp-validation-for="MessageBody" class="text-danger"></span>
-
-            <input type="submit" value="Versturen" class="verstuurknop"/>
-        </form>
-        <a asp-action="Startpagina" asp-controller="Application" class="close-btn">
-            <div>
-                X
-            </div>
-        </a>
-    </div>
-    </div>
-
-    <div class="center2">
-        <input type="checkbox" id="click2">
-    <label for ="click2" class="Info">Info</label>
-
-    <div class="content2">
-
-        <iframe class= "infovid" src="https://www.youtube.com/embed/wT9WivR6i1I" title="Beginvideo SOL" borderbegin="0">
-        </iframe>
-
-        <a asp-action="Startpagina" asp-controller="Application" class="close-btn">
-            <div>
-                X
-            </div>
-        </a>
-    </div>
-    </div>
-    
-
-
-    @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-    }
-
-   <!-- <a class="logo" href="/"><img src="img/sollogo.png"></a>
+<header>
+    <a class="logo" href="/"><img src="img/sollogo.png"></a>
     <nav>
         <ul class="nav__links">
 
         </ul>
-    </nav>-->
+    </nav>
     <!--<a class="cta" href="#">-->
-    <!--<a asp-action="ContactPage" asp-controller="Application" class="cta">
+    <a asp-action="ContactPage" asp-controller="Application" class="cta">
         Contact
     </a>
 </header>
@@ -99,5 +20,5 @@
         class="borderbegin" width="1206" height="678" src="https://www.youtube.com/embed/wT9WivR6i1I" title="Beginvideo SOL" borderbegin="0">
     </iframe>
 </div>
-<a asp-action="MainMenu" asp-controller="Application" class="button1">START</a>-->
+<a asp-action="MainMenu" asp-controller="Application" class="button1">START</a>
 </body>

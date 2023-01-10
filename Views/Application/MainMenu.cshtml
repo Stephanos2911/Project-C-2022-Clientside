@@ -4,7 +4,6 @@
     <link rel="stylesheet" type="text/css" href="~/css/MainMenu.css">
 </head>
 <body>
-    <p class = "title">Hoofdmenu</p>
     <a asp-action="Insideproductmenu" asp-controller="Application" class="Inside">
         <div>
             Binnenproducten
@@ -15,27 +14,6 @@
             Buitenproducten
         </div>   
     </a>
-    <a asp-action="StartPagina" asp-controller="Application" class="Back">
-        <div class = "back">
-            Terug
-        </div>    
-    </a>
 
-    <div class="center">
-        <input type="checkbox" id="click">
-    <label for ="click" class="Info">Info</label>
-
-    <div class="content">
-
-        <iframe class= "infovid" src="https://www.youtube.com/embed/wT9WivR6i1I" title="Beginvideo SOL" borderbegin="0">
-        </iframe>
-
-        <a asp-action="MainMenu" asp-controller="Application" class="close-btn">
-            <div class = "exit">
-                X
-            </div>
-        </a>
-    </div>
-    </div>
 </body>
 </html>

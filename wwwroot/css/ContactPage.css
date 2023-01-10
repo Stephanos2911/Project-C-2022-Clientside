@@ -28,9 +28,9 @@
     font-size: xx-large;
 }
 
-.Naam {
+.Telefoonnummer {
     position: fixed;
-    bottom: 55%;
+    bottom: 60%;
     left: 40%;
     display: block;
     width: 400px;
@@ -40,10 +40,10 @@
     font-size: x-large;
 }
 
-.Telefoonnummer {
+.Naam {
     position: fixed;
-    bottom: 40%;
-    left: 40%;
+    bottom: 60%;
+    left: 15%;
     display: block;
     width: 400px;
     height: 75px;
@@ -54,28 +54,28 @@
 
 .textarea {
     position: fixed;
-    bottom: 5%;
-    left: 25%;
+    bottom: 3%;
+    left: 9%;
     display: block;
-    width: 1000px;
-    height: 250px;
+    width: 1600px;
+    height: 500px;
     resize: none;
     padding: 20px;
-    font-size: x-large;
-}/*1600 500*/
+    font-size: xx-large;
+}
 
 .textarea::placeholder {
     text-align: center
 }
 
 .verstuurknop {
-    width: 200px;
+    width: 400px;
     height: 75px;
     background-color: #Ffcba4;
     position: fixed;
-    bottom: 5%;
-    left: 80%;
-    font-size: x-large;
+    bottom: 60%;
+    left: 65%;
+    font-size: xx-large;
 }
 
 .verstuurknop:hover {
@@ -95,9 +95,4 @@
     right: 5%;
     top: 5%;
     border: solid;
-}
-
-div {
-    width: 212px;
-    height: 200px;
 }
