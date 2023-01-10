@@ -11,24 +11,22 @@
     border: 12px solid #F9BE79;
 }
 
-.kantelbare {
+.kantelbare{
     width: 200px;
     height: 300px;
     position: absolute;
-    margin: 80px;
+    margin: 150px 70px;
     object-position: center;
 }
 
 .square h1 {
     position: absolute;
-    left: 350px;
-    line-height: 250px;
+    margin: 125px 350px;
 }
 
 .square h2 {
     position: absolute;
-    left: 350px;
-    line-height: 340px;
+    margin: 170px 350px;
     color: green;
 }
 .square h3 {
@@ -42,8 +40,7 @@
     width: 300px;
     height: 100px;
     position: absolute;
-    margin: 400px;
-    right: 18%;
+    margin: 400px 350px;
     object-position: center;
 }
 
@@ -134,4 +131,26 @@
     color: black;
     line-height: 445px;
     text-align: center;
+}
+table { 
+    border-collapse: collapse;
+    margin: 50px 90px;
+}
+
+td{
+    width: 350px;
+    height: 47px;
+    font-size: 26px;
+}
+.span{
+    font-size: 26px;
+}
+.color1{
+    background-color: darkgreen;
+}
+.color2{
+    background-color: darkorange;
+}
+.color3{
+    background-color: red;
 }

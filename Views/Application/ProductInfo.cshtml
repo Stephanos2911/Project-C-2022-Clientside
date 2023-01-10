@@ -1,38 +1,48 @@
-@model Product
-@{
-    string ImageDataUrl = string.Format("data:image/jpg;base64,{0}", Convert.ToBase64String(Model.ProductImage));
-}
+
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="~/css/ProductInfo.css">
 </head>
 <body>
+
 <div class="square">
-    <img src="@ImageDataUrl" alt="Kantelbare" />
-    <h1>@Model.Name</h1>
+    <img class="kantelbare" src="~/img/kantelbare.jpeg">
+    <h1>kantelbare machine</h1>
     <h2>Levertijd : 3-5 Werkdagen</h2>
+    <h3>59,95</h3>
+    <img class="bollogo" src="~/img/logobol.jpeg">
     
-    
+    <table>
+        <tr>
+            <td class="color1" style="color: white;">€ 0</td>
+            <td class="color2"></td>
+            <td class="color3" style="text-align:right;color: white;" > € 300</td>
+        </tr>
+    </table>
+
+
 </div>
 
-<a asp-action="ProductPagina" asp-controller="Application" class="terug" asp-route-id="@Model.Id">
+
+
+<a asp-action="ProductPagina" asp-controller="Application" class="terug">
     <div>
         Terug
     </div>
 </a>
 
 
-    <a asp-action="ProductPagina" asp-controller="Application" class="info">
+<a asp-action="ProductPagina" asp-controller="Application" class="info">
     <div>
         Info
     </div>
 </a>
-    <a asp-action="ProductPagina" asp-controller="Application" class="gratis">
+<a asp-action="ProductPagina" asp-controller="Application" class="gratis">
     <div>
         Gratis
     </div>
 </a>
-    <a asp-action="ProductPagina" asp-controller="Application" class="favorieten">
+<a asp-action="ProductPagina" asp-controller="Application" class="favorieten">
     <div>
         Favorieten
 
