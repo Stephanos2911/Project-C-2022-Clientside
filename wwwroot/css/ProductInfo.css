@@ -154,3 +154,12 @@ td{
 .color3{
     background-color: red;
 }
+.arrow-down {
+    width: 0;
+    height: 0;
+    margin: 0 60px;
+    position: absolute;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 50px solid #180AF5;
+}
