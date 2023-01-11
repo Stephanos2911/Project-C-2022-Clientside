@@ -49,19 +49,19 @@
 
 
 
-<a asp-action="ProductPagina" asp-route-id="@Model.Id" asp-controller="Application" class="terug">
+<a asp-action="ProductenOverzicht" asp-controller="Application" class="terug" asp-route-id="@Model.Place">
     <div>
         Terug
     </div>
 </a>
 
 
-<a asp-action="ProductPagina" asp-controller="Application" class="info">
+<a asp-action="ProductInfo" asp-controller="Application" class="info">
     <div>
         Beschrijving
     </div>
 </a>
-<a asp-action="ProductPagina" asp-controller="Application" class="gratis">
+<a asp-action="ProductInfo" asp-controller="Application" class="gratis">
     <div>
         Video
     </div>
