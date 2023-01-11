@@ -23,7 +23,7 @@
     <link rel="stylesheet" type="text/css" href="~/css/ProductInfo.css">
 </head>
 <body>
-
+<span id="favorite-indicator"></span>
 <div class="square"> 
     <img class="kantelbare" src="@ImageDataUrl">
     <h1>"@Model.Name"</h1>
@@ -67,7 +67,7 @@
         Gratis
     </div>
 </a>
-<a asp-action="ProductPagina" asp-controller="Application" class="favorieten">
+<a asp-action="ProductPagina" asp-controller="Application" class="favorieten" id="favorite-button" >
     <div>
         Favorieten
     </div>
