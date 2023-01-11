@@ -47,6 +47,23 @@
 
 </div>
 
+<div class="center">
+    <input type="checkbox" id="click">
+    <label for ="click" class="gratis">Info</label>
+
+    <div class="content">
+
+        <iframe class= "infovid" src="https://www.youtube.com/embed/wT9WivR6i1I" title="Beginvideo SOL" borderbegin="0">
+        </iframe>
+
+        <a asp-action="ProductInfo" asp-controller="Application" class="close-btn">
+            <div class = "exit">
+                X
+            </div>
+        </a>
+    </div>
+</div>
+
 
 
 <a asp-action="ProductenOverzicht" asp-controller="Application" class="terug" asp-route-id="@Model.Place">
@@ -66,7 +83,7 @@
         Video
     </div>
 </a>
-<a asp-action="ProductInfo" asp-route-id="@Model.Id" asp-controller="Application" class="favorieten" id="favorite-button" >
+<a asp-action="ProductInfo" asp-route-id="@Model.Id" asp-controller="Application" class="favorieten" id="favorite-button"  >
     <div>
         Favorieten
     </div>
