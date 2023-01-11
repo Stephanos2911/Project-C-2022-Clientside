@@ -1,4 +1,23 @@
 
+@model Product
+@{
+    //loads db context into this page
+    var _context = ViewBag.Context as ApplicationDbContext;
+
+    //query for all stores which have been selected for this product
+    var StoreLogosofProduct =
+        (from store in _context.Stores
+            where store.Products.Any(x => x.Id == Model.Id)
+            select store.StoreLogo).ToList();
+
+
+    List<string> storeimage = new List<string>();
+    for (int i = 0; i < StoreLogosofProduct.Count; i++)
+    {
+        storeimage.Add(string.Format("data:image/jpg;base64,{0}", Convert.ToBase64String(StoreLogosofProduct[i])));
+    }
+    string ImageDataUrl = string.Format("data:image/jpg;base64,{0}", Convert.ToBase64String(Model.ProductImage));
+}
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="~/css/ProductInfo.css">
@@ -6,13 +25,18 @@
 <body>
 
 <div class="square"> 
-    <img class="kantelbare" src="~/img/kantelbare.jpeg">
-    <h1>kantelbare machine</h1>
-    <h2>Levertijd : 3-5 Werkdagen</h2>
-    <h3>59,95</h3>
-    <img class="bollogo" src="~/img/logobol.jpeg">
+    <img class="kantelbare" src="@ImageDataUrl">
+    <h1>"@Model.Name"</h1>
+    <h3>@Model.Price</h3>
+    <img class="bollogo" src="@storeimage[0]">
     
-    <div class="arrow-down" style="left: 210px"></div>
+    @{
+        double pixels = (@Model.Price / 300) * 1050;
+        int pixelstoInt = (int) pixels;
+        string tekst = $"{pixelstoInt}px";
+    }
+
+    <div class="arrow-down" style="left: @tekst "></div>
     <table>
         <tr>
             <td class="color1" style="color: white;">€ 0</td>
