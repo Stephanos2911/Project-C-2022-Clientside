@@ -16,6 +16,7 @@
         storeimage.Add(string.Format("data:image/jpg;base64,{0}", Convert.ToBase64String(StoreLogosofProduct[i])));
     }
     string ImageDataUrl = string.Format("data:image/jpg;base64,{0}", Convert.ToBase64String(Model.ProductImage));
+    
 }
 <html>
 <head>
@@ -83,11 +84,25 @@
         Video
     </div>
 </a>
-<a asp-action="ProductInfo" asp-route-id="@Model.Id" asp-controller="Application" class="favorieten" id="favorite-button"  >
-    <div>
-        Favorieten
-    </div>
+<a class="favorieten" id="favorite-button" onclick="toggleFavorite('@Model.Id')">
+    <span id="favorite-text"></span>
 </a>
+
+<script>
+    function toggleFavorite(productId) {
+        if (typeof Storage !== "undefined") {
+            var isFavorited = localStorage.getItem(`favorited_${productId}`) === 'true';
+            localStorage.setItem(`favorited_${productId}`, !isFavorited);
+            document.getElementById("favorite-text").innerHTML = !isFavorited ? "Favorited" : "Favorite";
+        }
+    }
+    // check the item if it's already favorited
+    if (typeof Storage !== "undefined") {
+        var productId = '@Model.Id';
+        var isFavorited = localStorage.getItem(`favorited_${productId}`) === 'true';
+        document.getElementById("favorite-text").innerHTML = isFavorited ? "Favorited" : "Favorite";
+    }
+</script>
 
 </body>
 </html>
