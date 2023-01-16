@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="~/css/SP2.css">
 </head>
+
     <p class = "text">Welkom op de SOL website</p>
 
     @*<a asp-action="MainMenu" asp-controller="Application" class="Info">
@@ -30,6 +31,9 @@
                 Telefoonnummer SOL: 010 – 244 8240 <br>
                 Locatie: Schommelstraat 69 <br>
                 Postcode: 3035 CG Rotterdam <br>
+                <div class = "phone"><img src = "~/img/phone.png" class = "phone"></div>
+                <div class = "location"><img src = "~/img/gpsicon.png" class = "location"></div>
+                <div class = "zipcode"><img src = "~/img/contacticon.png" class = "zipcode"></div>
         </div>
 
         <p class = personalname>* Naam</p>
@@ -48,7 +52,7 @@
             <input asp-for="MessageBody" class="textarea" placeholder="Type hier uw bericht..."/>
             <span asp-validation-for="MessageBody" class="text-danger"></span>
 
-            <input type="submit" value="Versturen" class="verstuurknop"/>
+            <input type="submit" value="Versturen" class = "verstuurknop"/>
         </form>
         <a asp-action="Startpagina" asp-controller="Application" class="close-btn">
             <div>
@@ -74,8 +78,6 @@
         </a>
     </div>
     </div>
-    
-
 
     @section Scripts {
     @{
@@ -83,21 +85,4 @@
     }
     }
 
-   <!-- <a class="logo" href="/"><img src="img/sollogo.png"></a>
-    <nav>
-        <ul class="nav__links">
-
-        </ul>
-    </nav>-->
-    <!--<a class="cta" href="#">-->
-    <!--<a asp-action="ContactPage" asp-controller="Application" class="cta">
-        Contact
-    </a>
-</header>
-<div class="text-center">
-    <iframe
-        class="borderbegin" width="1206" height="678" src="https://www.youtube.com/embed/wT9WivR6i1I" title="Beginvideo SOL" borderbegin="0">
-    </iframe>
-</div>
-<a asp-action="MainMenu" asp-controller="Application" class="button1">START</a>-->
 </body>

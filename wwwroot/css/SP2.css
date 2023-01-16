@@ -97,6 +97,9 @@
 }
 
 .contacttext {
+    display: flex;
+    justify-content: center;
+    align-items: start;
     text-align: center;
     font-family: "Times New Roman", Times, serif;
     font-size: 50px;
@@ -131,7 +134,7 @@
     bottom: 5%;
     left: 5%;
     display: block;
-    width: 1000px;
+    width: 800px;
     height: 250px;
     resize: none;
     padding: 20px;
@@ -139,20 +142,34 @@
 }
 
 .verstuurknop {
-    width: 200px;
-    height: 75px;
+    width: 300px;
+    height: 250px;
     background-color: #Ffcba4;
     position: fixed;
-    right: 1%;
+    right: 5%;
     bottom: 5%;
-    font-size: x-large;
+    background-image: url("/img/sendicon.png");
+    background-position: 35px;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    border: solid;
+    border-color: black;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
     color: black;
+    display: flex;
+    justify-content: center;
+    line-height: 450px;
+    background-color: #Ffcba4;
 }
 
-    .verstuurknop:hover {
-        color: white;
-        transition: 0.7s;
-    }
+.verstuurknop:hover {
+    color: white;
+    transition: 0.7s;
+    background-image: url("/img/wsendicon.png");
+}
 
 .infovid {
     width: 1200px;
@@ -254,10 +271,10 @@
 
 .solinfo {
     height: 200px;
-    width: 400px;
+    width: 700px;
     position: absolute;
-    top: 30%;
-    right: 18%;
+    bottom: 45%;
+    right: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,8 +283,34 @@
     border: solid;
     border-color: black;
     font-family: "Times New Roman", Times, serif;
-    font-size: x-large;
+    font-size: xx-large;
+}
+
+.phone {
     color: black;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 1%;
+    top: 15%;
+}
+
+.location {
+    color: black;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 0%;
+    top: 32%;
+}
+
+.zipcode {
+    color: black;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 1%;
+    bottom: 15%;
 }
 
 .personalname {
@@ -312,4 +355,31 @@
     color: white;
     transition: 0.7s;
     background-image: url("/img/winfoicon.png");
+}
+
+#NameOfSender-error {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    color: red;
+    position: fixed;
+    left: 27%;
+    top: 22%;
+}
+
+#PhoneNumber-error {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    color: red;
+    position: fixed;
+    left: 27%;
+    top: 39%;
+}
+
+#MessageBody-error {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    color: red;
+    position: fixed;
+    left: 27%;
+    bottom: 38%;
 }
