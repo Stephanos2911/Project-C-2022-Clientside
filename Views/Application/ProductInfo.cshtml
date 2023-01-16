@@ -1,18 +1,42 @@
+@model Product
+@{
+    //loads db context into this page
+    var _context = ViewBag.Context as ApplicationDbContext;
 
+    //query for all stores which have been selected for this product
+    var StoreLogosofProduct =
+        (from store in _context.Stores
+            where store.Products.Any(x => x.Id == Model.Id)
+            select store.StoreLogo).ToList();
+
+
+    List<string> storeimage = new List<string>();
+    for (int i = 0; i < StoreLogosofProduct.Count; i++)
+    {
+        storeimage.Add(string.Format("data:image/jpg;base64,{0}", Convert.ToBase64String(StoreLogosofProduct[i])));
+    }
+    string ImageDataUrl = string.Format("data:image/jpg;base64,{0}", Convert.ToBase64String(Model.ProductImage));
+    
+}
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="~/css/ProductInfo.css">
 </head>
 <body>
-
-<div class="square">
-    <img class="kantelbare" src="~/img/kantelbare.jpeg">
-    <h1>kantelbare machine</h1>
-    <h2>Levertijd : 3-5 Werkdagen</h2>
-    <h3>59,95</h3>
-    <img class="bollogo" src="~/img/logobol.jpeg">
+<span id="favorite-indicator"></span>
+<div class="square"> 
+    <img class="kantelbare" src="@ImageDataUrl">
+    <h1>"@Model.Name"</h1>
+    <h3>@Model.Price</h3>
+    <img class="bollogo" src="@storeimage[0]">
     
-    <div class="arrow-down" style="left: 1050px"></div>
+    @{
+        double pixels = (@Model.Price / 300) * 1050;
+        int pixelstoInt = (int) pixels;
+        string tekst = $"{pixelstoInt}px";
+    }
+
+    <div class="arrow-down" style="left: @tekst "></div>
     <table>
         <tr>
             <td class="color1" style="color: white;">€ 0</td>
@@ -24,30 +48,61 @@
 
 </div>
 
+<div class="center">
+    <input type="checkbox" id="click">
+    <label for ="click" class="gratis">Info</label>
+
+    <div class="content">
+
+        <iframe class= "infovid" src="https://www.youtube.com/embed/wT9WivR6i1I" title="Beginvideo SOL" borderbegin="0">
+        </iframe>
+
+        <a asp-action="ProductInfo" asp-controller="Application" class="close-btn">
+            <div class = "exit">
+                X
+            </div>
+        </a>
+    </div>
+</div>
 
 
-<a asp-action="ProductPagina" asp-controller="Application" class="terug">
+
+<a asp-action="ProductenOverzicht" asp-controller="Application" class="terug" asp-route-id="@Model.Place">
     <div>
         Terug
     </div>
 </a>
 
 
-<a asp-action="ProductPagina" asp-controller="Application" class="info">
+<a asp-action="ProductInfo" asp-controller="Application" class="info">
     <div>
-        Info
+        Beschrijving
     </div>
 </a>
-<a asp-action="ProductPagina" asp-controller="Application" class="gratis">
+<a asp-action="ProductInfo" asp-controller="Application" class="gratis">
     <div>
-        Gratis
+        Video
     </div>
 </a>
-<a asp-action="ProductPagina" asp-controller="Application" class="favorieten">
-    <div>
-        Favorieten
-    </div>
+<a class="favorieten" id="favorite-button" onclick="toggleFavorite('@Model.Id')">
+    <span id="favorite-text"></span>
 </a>
+
+<script>
+    function toggleFavorite(productId) {
+        if (typeof Storage !== "undefined") {
+            var isFavorited = localStorage.getItem(`favorited_${productId}`) === 'true';
+            localStorage.setItem(`favorited_${productId}`, !isFavorited);
+            document.getElementById("favorite-text").innerHTML = !isFavorited ? "Favorited" : "Favorite";
+        }
+    }
+    // check the item if it's already favorited
+    if (typeof Storage !== "undefined") {
+        var productId = '@Model.Id';
+        var isFavorited = localStorage.getItem(`favorited_${productId}`) === 'true';
+        document.getElementById("favorite-text").innerHTML = isFavorited ? "Favorited" : "Favorite";
+    }
+</script>
 
 </body>
 </html>

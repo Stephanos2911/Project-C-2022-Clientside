@@ -12,22 +12,27 @@
     <link rel="stylesheet" type="text/css" href="~/css/ProductOverzicht.css">
 </head>
 <body>
-<div>
-<a asp-action="MainMenu" asp-controller="Application" class="Back">
-    <div class="text1">
-        Terug
-    </div>
-</a>
-</div>
-    @for(int i =0; i< @Model.Count(); i++)
-    {
-            <div class = Product1>
-                     <a asp-action="ProductPagina" asp-controller="Application" class="ProductBox" asp-route-id="@modelToList[i].Id">
-            <img src="@imageDataURL[i]" alt="Kantelbare" />
+<div class="product-grid">
+    <div class="product-box">
+        <a asp-action="MainMenu" asp-controller="Application" class="back-button">
             <div class="text1">
-                    @modelToList[i].Name
+                Terug
             </div>
-                    </a>
-            </div>
+        </a>
+    </div>
+    @for(int i = 0; i < @Model.Count(); i++)
+    {
+        <div class="product-box">
+            <a asp-action="ProductPagina" asp-controller="Application" class="product-link" asp-route-id="@modelToList[i].Id">
+                <img src="@imageDataURL[i]" alt="@modelToList[i].Name" />
+                <div class="product-name">@modelToList[i].Name</div>
+            </a>
+        </div>
+        @if (i % 3 == 2 && i != @Model.Count() - 1)
+        {
+        
+        <div class="product-grid"></div>
+        }
     }
+</div>
 </body>

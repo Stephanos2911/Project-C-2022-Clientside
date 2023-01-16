@@ -15,8 +15,11 @@ namespace UserApplication.Models
         [Required(ErrorMessage = "verplicht*")]
         [DataType(DataType.PhoneNumber)]
         [Phone]
+
         public string PhoneNumber { get; set; }
 
         public bool IsAnswered { get; set; }
+
+
     }
 }
