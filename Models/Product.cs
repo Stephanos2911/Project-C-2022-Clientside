@@ -9,9 +9,10 @@ namespace UserApplication.Models
         public string Description { get; set; }
         public double Price { get; set; }
         public int Place { get; set; }
+        public string PlaceAsString { get; set; }
         public string VideoLink { get; set; }
 
-        //elk product heeft een lijst met meerdere leveranciers, voor nu kan die ook leeg zijn (Many to many)
+        //Every product has a list of Stores it can be bought at, it can be empty. (Many to many)
         // https://www.learnentityframeworkcore.com/configuration/many-to-many-relationship-configuration
         public ICollection<Store>? Stores { get; set; }
 
