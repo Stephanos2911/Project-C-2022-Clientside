@@ -1,97 +1,382 @@
-html  {
-    font-size: 14px;
-    position: relative;
-    min-height: 100%;
-}
-
-.borderbegin {
-    position:absolute;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 50px;
-    margin:auto;
-    border: 12px solid #F9BE79 ;
-}
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 10%;
-    background-color: #24252a;
-}
-
-.logo {
-    cursor: pointer;
-}
-
-.nav__links a,
-.cta,.cta1,
-.overlay__content a {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    color: #edf0f1;
-    text-decoration: none;
-}
-
-.nav__links {
-    list-style: none;
-    display: flex;
-}
-
-.nav__links li {
-    padding: 0px 20px;
-}
-
-.nav__links li a {
-    transition: color 0.3s ease 0s;
-}
-
-.nav__links li a:hover {
-    color: #0088a9;
-}
-
-.cta {
-    padding: 10px 25px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s ease 0s;
-}
-
-.cta:hover {
-    background-color: rgba(0, 136, 169, 0.8);
-}
-.cta1 {
-    padding: 35px 40px;
-    background-color: rgba(249, 190, 121, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s ease 0s;
-    position: center;
-    right: 750px;
-    bottom: 50px;
-}
-
-.cta1:hover {
-    background-color: rgba(249, 190, 121, 0.8);
-}
-
-
-.button1 {
-    background-color: #F9BE79;
-    color: white;
-    padding: 30px 35px;
+﻿/*the buttons in the program*/
+.Verder {
+    width: 700px;
+    height: 175px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 30%;
+    left: 5%;
+    border: solid;
+    border-color: black;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    color: black;
+    line-height: 175px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    z-index: -1;
+}
+
+.Contact {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 5%;
+    right: 10%;
+    border: solid;
+    border-color: black;
+    background-image: url("/img/contacticon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+    color: black;
+    line-height: 625px;
+    text-align: center;
+    text-decoration: none;
     cursor: pointer;
+    z-index: -1;
+}
+
+.Info {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 50%;
+    right: 10%;
+    border: solid;
+    border-color: black;
+    background-image: url("/img/infoicon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+    color: black;
+    line-height: 625px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: -1;
+}
+ /*the vertical line in the program*/
+.vertical {
+    border-left: 6px solid black;
+    height: 750px;
+    position: fixed;
+    right: 45%;
+    bottom: 5%;
+}
+/*all the text in the program */
+.text {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 70px;
+    position: fixed;
+    left: 4%;
+    top: 20%;
+}
+
+.verdertext{
+    width: 700px;
+    height: 175px;
+}
+
+.contacttext {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+}
+
+
+.verstuurknop {
+    width: 300px;
+    height: 250px;
+    background-color: #Ffcba4;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    background-image: url("/img/sendicon.png");
+    background-position: 35px;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    border: solid;
+    border-color: black;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+    color: black;
+    display: flex;
+    justify-content: center;
+    line-height: 450px;
+    background-color: #Ffcba4;
+}
+
+.verstuurknop:hover {
+    color: white;
+    transition: 0.7s;
+    background-image: url("/img/wsendicon.png");
+}
+
+.infovid {
+    width: 1200px;
+    height: 660px;
+    display: block;
+    margin: 0 auto;
     position: absolute;
-    right: 760px;
-    bottom: 60px;
-    border-radius: 10px
+    bottom: 5%;
+    left: 4%;
+}
+
+.infodiv {
+    width: 350px;
+    height: 350px;
+}
+/*everything in and for the contact pop up*/
+.contactpopup {
+    position: absolute;
+    top: 33%;
+    left: 75%;
+}
+
+#click {
+    display: none;
+}
+
+.content {
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,4);
+    width: 1300px;
+    height: 750px;
+    background-color: #Ffcba4;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border: solid
+}
+
+#click:checked ~ .content {
+    opacity: 1;
+    visibility: visible;
+}
+/*all the textboxes*/
+.Naam {
+    position: fixed;
+    bottom: 62%;
+    left: 5%;
+    display: block;
+    width: 400px;
+    height: 75px;
+    resize: none;
+    padding: 20px;
+    font-size: x-large;
+}
+
+.Telefoonnummer {
+    position: fixed;
+    bottom: 45%;
+    left: 5%;
+    display: block;
+    width: 400px;
+    height: 75px;
+    resize: none;
+    padding: 20px;
+    font-size: x-large;
+}
+
+.Bericht {
+    position: fixed;
+    bottom: 5%;
+    left: 5%;
+    display: block;
+    width: 800px;
+    height: 250px;
+    resize: none;
+    padding: 20px;
+    font-size: x-large;
+}
+
+
+/*everything in and for the contact pop up*/
+.infopopup {
+    position: absolute;
+    top: 33%;
+    left: 75%;
+}
+
+#click2 {
+    display: none;
+}
+
+.content2 {
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,4);
+    width: 1300px;
+    height: 750px;
+    background-color: #Ffcba4;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border: solid
+}
+
+#click2:checked ~ .content2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.close-btn {
+    position: absolute;
+    right: .1%;
+    top: .1%;
+    border: 2px solid #ff0000;
+    border-radius: 3px;
+    color: white;
+    padding: 1px 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 45px;
+    height: 75px;
+    width: 75px;
+    background: #ff0000;
+}
+
+
+/*all text in the popup*/
+.solinfo {
+    height: 200px;
+    width: 700px;
+    position: absolute;
+    bottom: 45%;
+    right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    border: solid;
+    border-color: black;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+}
+
+.phone {
+    color: black;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 1%;
+    top: 15%;
+}
+
+.location {
+    color: black;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 0%;
+    top: 32%;
+}
+
+.zipcode {
+    color: black;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 1%;
+    bottom: 15%;
+}
+
+.personalname {
+    position: absolute;
+    left: 5%;
+    bottom: 70%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+    color: black;
+}
+
+.personalphone {
+    position: absolute;
+    left: 5%;
+    bottom: 53%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+    color: black;
+}
+
+.personalmessage {
+    position: absolute;
+    left: 5%;
+    bottom: 36%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+    color: black;
+}
+
+/*all hovers*/
+.Verder:hover{
+    color: white;
+    transition: 0.7s;
+}
+
+.Contact:hover {
+    color: white;
+    transition: 0.7s;
+    background-image: url("/img/wcontacticon.png");
+}
+
+.Info:hover {
+    color: white;
+    transition: 0.7s;
+    background-image: url("/img/winfoicon.png");
+}
+
+.close-btn:hover {
+    background: white;
+    color: #ff0000;
+    transition: .7s;
+}
+
+/*errormessages*/
+#NameOfSender-error {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    color: red;
+    position: fixed;
+    left: 27%;
+    top: 22%;
+}
+
+#PhoneNumber-error {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    color: red;
+    position: fixed;
+    left: 27%;
+    top: 39%;
+}
+
+#MessageBody-error {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    color: red;
+    position: fixed;
+    left: 27%;
+    bottom: 38%;
 }

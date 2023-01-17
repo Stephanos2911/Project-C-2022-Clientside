@@ -6,13 +6,13 @@ namespace UserApplication.Models
     {
         public Guid Id { get; set; }
 
-        [Required(AllowEmptyStrings = false, ErrorMessage = "veld is verplicht")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "verplicht*" )]
         public string NameOfSender { get; set; }
 
-        [Required(AllowEmptyStrings = false, ErrorMessage = "veld is verplicht")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "verplicht*")]
         public string MessageBody { get; set; }
 
-        [Required(ErrorMessage = "veld is verplicht")]
+        [Required(ErrorMessage = "verplicht*")]
         [DataType(DataType.PhoneNumber)]
         [Phone]
 

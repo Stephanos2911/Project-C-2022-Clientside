@@ -1,4 +1,5 @@
-﻿.Inside {
+﻿/*all the buttons in the program*/
+.Inside {
     width: 400px;
     height: 400px;
     border-radius: 10px;
@@ -85,46 +86,6 @@
     cursor: pointer;
 }
 
-.Inside:link {
-    text-decoration: none;
-}
-
-/*.Outside:link {
-    text-decoration: none;
-}*/
-
-.treeicon {
-    width: 210px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/*.houseicon {
-    width: 150px;
-    position: absolute;
-    top: 12%;
-    left: 20%;
-}*/
-
-.Inside:hover {
-    color: white;
-    transition: 0.7s;
-    background-image: url("/img/whouseicon.png");
-}
-
-.Outside:hover {
-    color: white;
-    transition: 0.7s;
-    background-image: url("/img/wtreeicon.png");
-}
-
-.Back:hover {
-    color: white;
-    transition: 0.7s;
-    background-image: url("/img/wbackarrow.png");
-}
-
 div{
     width: 400px;
     height: 400px;
@@ -135,15 +96,12 @@ div{
     height: 200px;
 }
 
-.center {
+/*everything for and in the popup*/
+
+.infopopup {
     position: absolute;
     top: 33%;
     left: 75%;
-}
-
-.infodiv {
-    width: 212px;
-    height: 200px;
 }
 
 .infovid {
@@ -196,17 +154,7 @@ div{
     background: #ff0000;
 }
 
-    .close-btn:hover {
-        background: white;
-        color: #ff0000;
-        transition: .7s;
-    }
 
-.Info:hover {
-    color: white;
-    transition: 0.7s;
-    background-image: url("/img/winfoicon.png");
-}
 
 .exit {
     height: 75px;
@@ -219,4 +167,36 @@ div{
     color: black;
     display: flex;
     justify-content: center;
+}
+
+/*all hovers*/
+
+.Inside:hover {
+    color: white;
+    transition: 0.7s;
+    background-image: url("/img/whouseicon.png");
+}
+
+.Outside:hover {
+    color: white;
+    transition: 0.7s;
+    background-image: url("/img/wtreeicon.png");
+}
+
+.Back:hover {
+    color: white;
+    transition: 0.7s;
+    background-image: url("/img/wbackarrow.png");
+}
+
+.Info:hover {
+    color: white;
+    transition: 0.7s;
+    background-image: url("/img/winfoicon.png");
+}
+
+.close-btn:hover {
+    background: white;
+    color: #ff0000;
+    transition: .7s;
 }
