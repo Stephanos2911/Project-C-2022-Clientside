@@ -1,16 +1,10 @@
 @model UserApplication.Models.Message
 <body>
 <head>
-    <link rel="stylesheet" type="text/css" href="~/css/SP2.css">
+    <link rel="stylesheet" type="text/css" href="~/css/Startpagina.css">
 </head>
 
     <p class = "text">Welkom op de SOL website</p>
-
-    @*<a asp-action="MainMenu" asp-controller="Application" class="Info">
-         <div class = "infodiv">
-             Info 
-         </div>
-    </a>*@
 
     <a asp-action="MainMenu" asp-controller="Application" class="Verder">
          <div class = "verdertext">
@@ -20,8 +14,8 @@
 
     <div class = "vertical"></div>
 
-   
-    <div class="center">
+ 
+    <div class="contactpopup">
         <input type="checkbox" id="click">
     <label for ="click" class="Contact">Contact</label>
 
@@ -41,15 +35,15 @@
         <p class = personalmessage>* Bericht</p>
 
 
-        <form method="post" asp-action="ContactPage" asp-controller="Application">
+        <form method="post" asp-action="Startpagina" asp-controller="Application">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input asp-for="NameOfSender" class="Naam" placeholder="Type hier uw naam..."/> <!--form control-->
+            <input asp-for="NameOfSender" class="Naam" placeholder="Type hier uw naam..."/> 
             <span asp-validation-for="NameOfSender" class="text-danger"></span> 
          
             <input asp-for="PhoneNumber" class="Telefoonnummer" placeholder="Type hier uw telefoonnummer..." />
             <span asp-validation-for="PhoneNumber" class="text-danger"></span>
        
-            <input asp-for="MessageBody" class="textarea" placeholder="Type hier uw bericht..."/>
+            <input asp-for="MessageBody" class="Bericht" placeholder="Type hier uw bericht..."/>
             <span asp-validation-for="MessageBody" class="text-danger"></span>
 
             <input type="submit" value="Versturen" class = "verstuurknop"/>
@@ -62,9 +56,9 @@
     </div>
     </div>
 
-    <div class="center2">
+    <div class="infopopup">
         <input type="checkbox" id="click2">
-    <label for ="click2" class="Info">Info</label>
+    <label for ="click2" class="Info">Informatie</label>
 
     <div class="content2">
 
