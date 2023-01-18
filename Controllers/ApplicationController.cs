@@ -24,7 +24,7 @@ namespace UserApplication.Controllers
         {
             return View();
         }
-        public IActionResult Insideproductmenu()
+        public IActionResult Productmenu()
         {
             return View();
         }

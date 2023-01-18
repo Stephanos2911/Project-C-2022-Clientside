@@ -108,7 +108,7 @@
     text-decoration: none;
 }
 
-.Health {
+.GPS {
     width: 250px;
     height: 280px;
     border-radius: 10px;
@@ -118,7 +118,7 @@
     left: 70%;
     border: solid;
     border-color: black;
-    background-image: url("/img/healthicon.png");
+    background-image: url("/img/gpsicon.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 150px;
@@ -129,7 +129,7 @@
     text-align: center;
     text-decoration: none;
 }
-
+/*all the hovers*/
 .Back:hover {
     color: white;
     transition: 0.7s;
@@ -160,10 +160,10 @@
     background-image: url("/img/wbedroomicon.png");
 }
 
-.Health:hover {
+.GPS:hover {
     color: white;
     transition: 0.7s;
-    background-image: url("/img/whealthicon.png");
+    background-image: url("/img/wgpsicon.png");
 }
 
 div {
