@@ -1,15 +1,25 @@
-<html>
+
 <head>
-    <link rel="stylesheet" type="text/css" href="~/css/FavorietenPagina.css">
+    <link rel="stylesheet" type="text/css" href="~/css/ProductOverzicht.css">
 </head>
 <body>
-
-<a asp-action="MainMenu" asp-controller="Application" class="terug">
-    <div>
-        Terug
+<p class = "title">Favorieten</p>
+<div class="product-grid">
+    <div class="product-box">
+        <a asp-action="MainMenu" asp-controller="Application" class="terug">
+            <div class="text1">
+                Terug
+            </div>
+        </a>
     </div>
-</a>
+    <div class="product-box">
+        <a asp-action="Productinfo" asp-controller="Application" class="product-link" >
+            <img src="~/img/kantelbare.png" alt="Kantelbare"/>
+            <div class="product-name">Kantelbare Waterkoker</div>
+        </a>
+        
+    </div>
 
-
+    }
+</div>
 </body>
-</html>

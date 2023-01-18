@@ -1,6 +1,6 @@
 .title {
     font-family: "Times New Roman", Times, serif;
-    font-size: 80px;
+    font-size: 60px;
     color: black;
     display: flex;
     justify-content: center;
@@ -38,10 +38,10 @@
     left: 40%;
     border: solid;
     border-color: black;
-    background-image: url("/img/kitchenicon.png");
+    background-image: url("/img/mindfulness.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 220px;
+    background-size: 280px;
     font-family: "Times New Roman", Times, serif;
     font-size: 40px;
     color: black;
@@ -60,7 +60,7 @@
     left: 70%;
     border: solid;
     border-color: black;
-    background-image: url("/img/bathroomicon.png");
+    background-image: url("/img/medapp.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 150px;
@@ -82,10 +82,10 @@
     left: 10%;
     border: solid;
     border-color: black;
-    background-image: url("/img/livingroomicon.png");
+    background-image: url("/img/wandelen.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 150px;
+    background-size: 100px;
     font-family: "Times New Roman", Times, serif;
     font-size: 40px;
     color: black;
@@ -104,7 +104,7 @@
     left: 40%;
     border: solid;
     border-color: black;
-    background-image: url("/img/bedroomicon.png");
+    background-image: url("/img/brein.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 200px;
@@ -126,7 +126,7 @@
     left: 70%;
     border: solid;
     border-color: black;
-    background-image: url("/img/gpsicon.png");
+    background-image: url("/img/eetmeter.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 150px;
@@ -144,34 +144,34 @@
     background-image: url("/img/wbackarrow.png");
 }
 
-.Kitchen:hover {
+.Mindfulness:hover {
     color: white;
     transition: 0.7s;
-    background-image: url("/img/wkitchenicon.png");
+    background-image: url("/img/wmindfulness.png");
 }
 
-.Bathroom:hover {
+.MedApp:hover {
     color: white;
     transition: 0.7s;
-    background-image: url("/img/wbathroomicon.png");
+    background-image: url("/img/wmedapp.png");
 }
 
-.Livingroom:hover {
+.Wandel:hover {
     color: white;
     transition: 0.7s;
-    background-image: url("/img/wlivingroomicon.png");
+    background-image: url("/img/wwandelen.png");
 }
 
-.Bedroom:hover {
+.Brein:hover {
     color: white;
     transition: 0.7s;
-    background-image: url("/img/wbedroomicon.png");
+    background-image: url("/img/wbrein.png");
 }
 
-.GPS:hover {
+.Eetmeter:hover {
     color: white;
     transition: 0.7s;
-    background-image: url("/img/wgpsicon.png");
+    background-image: url("/img/weetmeter.png");
 }
 
 div {
