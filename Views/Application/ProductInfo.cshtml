@@ -108,29 +108,34 @@
 
 
 <a class="favorieten" id="favorite-button" onclick="toggleFavorite('@Model.Id')">
-    <span id="favorite-text"></span>
+    <span id="favorite-text">Favorieten</span>
 </a>
 
+
 <script>
-    function toggleFavorite(productId) {
-        if (typeof Storage !== "undefined") {
-            var isFavorited = localStorage.getItem(`favorited_${productId}`) === 'true';
-            localStorage.setItem(`favorited_${productId}`, !isFavorited);
-            document.getElementById("favorite-text").innerHTML = !isFavorited ? "Favorited" : "Favorite";
-            var button = document.getElementById("favorite-button");
-                    if (!isFavorited) {
-                        button.classList.add("favorited");
-                    } else {
-                        button.classList.remove("favorited");
-                    }
+function toggleFavorite(productId) {
+    if (typeof Storage !== "undefined") {
+        var isFavorited = localStorage.getItem(`favorited_${productId}`) === 'true';
+        localStorage.setItem(`favorited_${productId}`, !isFavorited);
+        var button = document.getElementById("favorite-button");
+        if (!isFavorited) {
+            button.classList.add("favorited");
+        } else {
+            button.classList.remove("favorited");
         }
     }
-    // check the item if it's already favorited
-    if (typeof Storage !== "undefined") {
-        var productId = '@Model.Id';
-        var isFavorited = localStorage.getItem(`favorited_${productId}`) === 'true';
-        document.getElementById("favorite-text").innerHTML = isFavorited ? "Favorited" : "Favorite";
+}
+
+// check the item if it's already favorited
+if (typeof Storage !== "undefined") {
+    var productId = '@Model.Id';
+    var isFavorited = localStorage.getItem(`favorited_${productId}`) === 'true';
+    var button = document.getElementById("favorite-button");
+    if (isFavorited) {
+        button.classList.add("favorited");
     }
+}
+
 
 </script>
 

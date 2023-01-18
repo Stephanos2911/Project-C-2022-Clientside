@@ -1,4 +1,13 @@
+@model Product
+@{
+    //loads db context into this page
+    var _context = ViewBag.Context as ApplicationDbContext;
+    if(_context != null)
+    {
+        // code to use _context
+    }
 
+}
 <head>
     <link rel="stylesheet" type="text/css" href="~/css/ProductOverzicht.css">
 </head>
@@ -12,13 +21,31 @@
             </div>
         </a>
     </div>
-    <div class="product-box">
-        <a asp-action="Productinfo" asp-route-id="08daf8d3-ddbe-4c90-8aa4-69d02ff0fc27" asp-controller="Application" class="product-link" >
-            <img src="~/img/kantelbare.jpeg" alt="Kantelbare"/>
-            <div class="product-name">Kantelbare Waterkoker</div>
-        </a>
-        
-    </div>
+    
+<ul id="favorites-list">
+    <script>
+        if (typeof window.localStorage !== 'undefined') {
+            // localStorage is supported
+        } else {
+            // localStorage is not supported
+        }
+
+        if (typeof Storage !== "undefined") {
+            for (var i = 0; i < localStorage.length; i++) {
+                var key = localStorage.key(i);
+                if (key.startsWith("favorited_")) {
+                    var productId = key.substring(10);
+                    var product = _context.Products.FirstOrDefault(x => x.Id == productId);
+                    if (product != null) {
+                        <li>@Model.Id</li>
+                    }
+                }
+            }
+        }
+    }
+    </script>
+</ul>
+
 
     }
 </div>

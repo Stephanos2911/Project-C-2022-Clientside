@@ -117,11 +117,6 @@ div{
 
 /*everything for and in the popup*/
 
-.infopopup {
-    position: absolute;
-    top: 33%;
-    left: 75%;
-}
 
 .infovid {
     width: 1200px;
