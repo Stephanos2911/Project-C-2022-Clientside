@@ -2,7 +2,7 @@
 .square {
     width: 1305px;
     height: 575px;
-    position: absolute;
+    position: fixed;
     right: 0;
     left: 150px;
     top: 0;
@@ -66,10 +66,12 @@
 }
 
 .terug:hover {
-    background-color: rgba(249, 190, 121, 0.5);
+    color: white;
+    transition: 0.7s;
+    background-image: url("/img/wbackarrow.png");
 }
 
-.info {
+.beschrijving {
     width: 275px;
     height: 250px;
     border-radius: 10px;
@@ -89,8 +91,12 @@
     line-height: 445px;
     text-align: center;
 }
-
-.gratis {
+.beschrijving:hover {
+    color: white;
+    transition: 0.7s;
+    background-image: url("/img/wdescriptionicon.png");
+}
+.video {
     width: 275px;
     height: 250px;
     border-radius: 10px;
@@ -109,6 +115,11 @@
     color: black;
     line-height: 445px;
     text-align: center;
+}
+.video:hover {
+    color: white;
+    transition: 0.7s;
+    background-image: url("/img/wvideoicon.png");
 }
 
 .favorieten {
@@ -131,6 +142,12 @@
     line-height: 445px;
     text-align: center;
 }
+.favorieten:hover {
+    color: white;
+    transition: 0.7s;
+    background-image: url("/img/wFavorietZonder.png");
+}
+
 table { 
     border-collapse: collapse;
     margin: 50px 90px;
@@ -162,37 +179,34 @@ td{
     border-right: 30px solid transparent;
     border-top: 50px solid #180AF5;
 }
-.infovid {
+.videocontent {
     width: 1200px;
     height: 500px;
     display: block;
-    margin: 0 auto;
+    margin: 20px 20px;
     position: absolute;
-    bottom: 5%;
-    left: 4%;
 }
 
-#click {
+.modal {
     display: none;
-}
-
-.content {
-    margin: 60px 200px;
-    visibility: hidden;
+    position: fixed;
+    margin: 60px 210px;
     border-radius: 3px;
     box-shadow: 0 2px 12px 0 rgba(0,0,0,4);
     width: 1305px;
     height: 575px;
     background-color: #Ffcba4;
-    position: fixed;
     border: solid
 }
 
-#click:checked ~ .content {
-    visibility: visible;
+.modal-content {
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
 }
 
-.close-btn {
+.close {
     position: absolute;
     right: .1%;
     top: .1%;
@@ -207,81 +221,35 @@ td{
     background: #ff0000;
 }
 
-.close-btn:hover {
+.close:hover,
+.close:focus {
     background: white;
     color: #ff0000;
     transition: .7s;
 }
-
-.gratis:hover {
-    color: white;
-    transition: 0.7s;
-    background-image: url("/img/winfoicon.png");
-}
-
-.exit {
-    height: 75px;
-    width: 75px;
-}
-.infovid1 {
-    width: 1200px;
-    height: 500px;
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 5%;
-    left: 4%;
-}
-
-#click {
-    display: none;
-}
-
-.content1 {
-    margin: 60px 200px;
-    visibility: hidden;
-    border-radius: 3px;
-    box-shadow: 0 2px 12px 0 rgba(0,0,0,4);
-    width: 1305px;
-    height: 575px;
+.favorited{
+    width: 275px;
+    height: 250px;
+    border-radius: 10px;
     background-color: #Ffcba4;
     position: fixed;
-    border: solid
+    bottom: 5%;
+    left: 34%;
+    border: solid;
+    border-color: black;
+    background-image: url("/img/FavorietMet.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+    color: black;
+    line-height: 445px;
+    text-align: center;   
 }
-
-#click:checked ~ .content1 {
-    visibility: visible;
-}
-
-.close-btn1 {
-    position: absolute;
-    right: .1%;
-    top: .1%;
-    border: 2px solid #ff0000;
-    border-radius: 3px;
-    color: white;
-    cursor: pointer;
-    text-align: center;
-    font-size: 45px;
-    height: 75px;
-    width: 75px;
-    background: #ff0000;
-}
-
-.close-btn1:hover {
-    background: white;
-    color: #ff0000;
-    transition: .7s;
-}
-
-.info:hover {
+.favorited:hover {
     color: white;
     transition: 0.7s;
-    background-image: url("/img/winfoicon.png");
-}
-
-.exit1 {
-    height: 75px;
-    width: 75px;
+    background-image: url("/img/wFavorietMet.png");
 }
 

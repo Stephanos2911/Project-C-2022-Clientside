@@ -47,39 +47,51 @@
 
 
 </div>
-
-<div class="center">
-    <input type="checkbox" id="click">
-    <label for ="click" class="gratis">Video</label>
-
-    <div class="content">
-
-        <iframe class= "infovid" src="https://www.youtube.com/embed/wT9WivR6i1I" title="Beginvideo SOL" borderbegin="0">
-        </iframe>
-
-        <a asp-action="ProductInfo" asp-controller="Application" class="close-btn">
-            <div class = "exit">
-                X
-            </div>
-        </a>
+<button class="video" onclick="showVideo()">Video</button>
+<div id="videoModal" class="modal">
+    <span class="close" onclick="closeVideo()">&times;</span>
+    <div class="videocontent">
+        <iframe class= "videocontent" src="https://www.youtube.com/embed/wT9WivR6i1I" title="Beginvideo SOL" borderbegin="0">
+                </iframe>
     </div>
 </div>
 
-<div class="center1">
-    <input type="checkbox" id="click1">
-    <label for ="click1" class="info">Beschrijving</label>
-
-    <div class="content1">
-
-        <span>kanekr ziek</span>
-
-        <a asp-action="ProductInfo" asp-controller="Application" class="close-btn1">
-            <div class = "exit1">
-                X
-            </div>
-        </a>
     </div>
 </div>
+<button class="beschrijving" onclick="showDescription()">Beschrijving</button>
+<div id="descriptionModal" class="modal">
+    <span class="close" onclick="closeDescription()">&times;</span>
+    <div class="modal-content">
+        <p>Hello World</p>
+    </div>
+</div>
+<script>
+    function showDescription() {
+        closeVideo();
+        var modal = document.getElementById("descriptionModal");
+        modal.style.display = "block";
+    }
+
+    function closeDescription() {
+        var modal = document.getElementById("descriptionModal");
+        modal.style.display = "none";
+    }
+
+    function showVideo() {
+        closeDescription();
+        var modal = document.getElementById("videoModal");
+            modal.style.display = "block";
+        }
+    
+    function closeVideo() {
+        var modal = document.getElementById("videoModal");
+            modal.style.display = "none";
+        }
+
+
+</script>
+
+
 
 <a asp-action="ProductenOverzicht" asp-controller="Application" class="terug" asp-route-id="@Model.Place">
     <div>

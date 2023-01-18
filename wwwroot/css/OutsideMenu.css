@@ -1,60 +1,16 @@
-﻿.Back {
-    width: 250px;
-    height: 280px;
-    border-radius: 10px;
-    background-color: #Ffcba4;
-    position: fixed;
-    bottom: 50%;
-    left: 10%;
-    border: solid;
-    border-color: black;
-    background-image: url("/img/backarrow.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 150px;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 40px;
-    color: black;
-    line-height: 500px;
+﻿/* CSS for the favorites page */
+h1 {
     text-align: center;
-    text-decoration: none;
 }
 
-.GPS {
-    width: 250px;
-    height: 280px;
-    border-radius: 10px;
-    background-color: #Ffcba4;
-    position: fixed;
-    bottom: 50%;
-    left: 40%;
-    border: solid;
-    border-color: black;
-    background-image: url("/img/gpsicon.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 200px;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 40px;
-    color: black;
-    line-height: 500px;
-    text-align: center;
-    text-decoration: none;
+#favorites-list {
+    list-style-type: none;
+    padding: 0;
 }
 
-.Back:hover {
-    color: white;
-    transition: 0.7s;
-    background-image: url("/img/wbackarrow.png");
-}
-
-.GPS:hover {
-    color: white;
-    transition: 0.7s;
-    background-image: url("/img/wgpsicon.png");
-}
-
-div {
-    width: 250px;
-    height: 280px;
+#favorites-list li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
 }
