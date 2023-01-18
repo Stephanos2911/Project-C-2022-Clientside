@@ -22,11 +22,13 @@
 .square h1 {
     position: absolute;
     margin: 125px 350px;
+    font-size: 50px;
+    text-shadow: 1px 1px #2a2d34;
 }
 
 .square h2 {
     position: absolute;
-    margin: 170px 350px;
+    margin: 350px 350px;
     color: green;
 }
 .square h3 {
@@ -35,10 +37,11 @@
     line-height: 100px;
     margin: 200px;
     font-size: 75px;
+    text-shadow: 2px 2px #2a2d34;
 }
 .bollogo {
     width: 300px;
-    height: 100px;
+    height: 100;
     position: absolute;
     margin: 400px 350px;
     object-position: center;
@@ -200,10 +203,11 @@ td{
 }
 
 .modal-content {
-    margin: 15% auto;
-    padding: 20px;
+    margin: 5% auto;
+    padding: 10px;
     border: 1px solid #888;
     width: 80%;
+    font-size: 25px;
 }
 
 .close {

@@ -1,7 +1,18 @@
+.title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 80px;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
 .product-grid {
+    margin: 40px;
+    margin-left: 170px;
+    margin-right: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-template-rows: repeat(2, auto); /* 2 rows */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto); 
     justify-content: center;
 }
 
@@ -21,7 +32,11 @@
     align-items: center;
     flex-direction: row;
 }
-
+.product-box:hover {
+    background-color: #Ffcba4;
+    opacity:0.6;
+    transition: 0.7s;
+}
 .product-link {
     text-decoration: none;
 }
@@ -31,8 +46,10 @@
     font-size: 25px;
     color: black;
     text-align: center;
-    
-    
+}
+.product-name:hover {
+    color: white;
+    transition: 0.7s;
 }
 
 .product-box img {
@@ -43,4 +60,41 @@
     object-position: center;
     position: relative;
     background-color: transparent;
+}
+.terug{
+    width: 300px;
+    height: 330px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    border: solid;
+    border-color: black;
+    flex: none;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    background-image: url("/img/backarrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 175px;
+}
+
+.terug:hover {
+    color: white;
+    transition: 0.7s;
+    background-image: url("/img/wbackarrow.png");
+}
+.text1{
+    margin:100px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    line-height: 350px;
+}
+.text1:hover {
+    color: white;
+    transition: 0.7s;
 }

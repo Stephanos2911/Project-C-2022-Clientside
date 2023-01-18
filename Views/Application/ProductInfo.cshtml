@@ -26,8 +26,9 @@
 <span id="favorite-indicator"></span>
 <div class="square"> 
     <img class="kantelbare" src="@ImageDataUrl">
-    <h1>"@Model.Name"</h1>
-    <h3>@Model.Price</h3>
+    <h1>@Model.Name</h1>
+    <h2>Verkrijgbaar bij:</h2>
+    <h3>€@Model.Price</h3>
     <img class="bollogo" src="@storeimage[0]">
     
     @{
@@ -62,7 +63,13 @@
 <div id="descriptionModal" class="modal">
     <span class="close" onclick="closeDescription()">&times;</span>
     <div class="modal-content">
-        <p>Hello World</p>
+        <p>Probleemloos en veilig heet water inschenken!
+           
+           Door het ergonomische ontwerp van de Uccello waterkoker schenkt u probleemloos en veilig heet water in. Het handige kantelmechanisme is uitermate geschikt voor personen met beperkte kracht en mobiliteit.
+           
+           De Uccello waterkoker heeft een rond design en is voorzien van een uniek kantelmechanisme. Hierdoor onderscheidt de Uccello zich van andere waterkokers en inschenkhulpen. Door het ronde design wordt het water als het ware naar de meest optimale schenkpositie verplaatst. Het ingenieuze kantelsysteem zorgt ervoor dat er weinig kracht is vereist voor het maken van de kantelbeweging.
+           
+           Dankzij de ingebouwde gewichtsverdeling kan de ketel met één vinger worden gekanteld. Het gewicht wordt verdeeld over de hele arm in plaats van op de vingers en polsen.</p>
     </div>
 </div>
 <script>
@@ -110,6 +117,12 @@
             var isFavorited = localStorage.getItem(`favorited_${productId}`) === 'true';
             localStorage.setItem(`favorited_${productId}`, !isFavorited);
             document.getElementById("favorite-text").innerHTML = !isFavorited ? "Favorited" : "Favorite";
+            var button = document.getElementById("favorite-button");
+                    if (!isFavorited) {
+                        button.classList.add("favorited");
+                    } else {
+                        button.classList.remove("favorited");
+                    }
         }
     }
     // check the item if it's already favorited

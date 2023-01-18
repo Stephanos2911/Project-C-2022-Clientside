@@ -1,6 +1,14 @@
-﻿.Back {
-    width: 250px;
-    height: 280px;
+﻿.title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 80px;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.Back {
+    width: 300px;
+    height: 330px;
     border-radius: 10px;
     background-color: #Ffcba4;
     position: fixed;
@@ -11,18 +19,18 @@
     background-image: url("/img/backarrow.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 150px;
+    background-size: 180px;
     font-family: "Times New Roman", Times, serif;
     font-size: 40px;
     color: black;
-    line-height: 500px;
+    line-height: 560px;
     text-align: center;
     text-decoration: none;
 }
 
 .Kitchen {
-    width: 250px;
-    height: 280px;
+    width: 300px;
+    height: 330px;
     border-radius: 10px;
     background-color: #Ffcba4;
     position: fixed;
@@ -37,14 +45,14 @@
     font-family: "Times New Roman", Times, serif;
     font-size: 40px;
     color: black;
-    line-height: 500px;
+    line-height: 560px;
     text-align: center;
     text-decoration: none;
 }
 
 .Bathroom {
-    width: 250px;
-    height: 280px;
+    width: 300px;
+    height: 330px;
     border-radius: 10px;
     background-color: #Ffcba4;
     position: fixed;
@@ -59,14 +67,14 @@
     font-family: "Times New Roman", Times, serif;
     font-size: 40px;
     color: black;
-    line-height: 500px;
+    line-height: 560px;
     text-align: center;
     text-decoration: none;
 }
 
 .Livingroom {
-    width: 250px;
-    height: 280px;
+    width: 300px;
+    height: 330px;
     border-radius: 10px;
     background-color: #Ffcba4;
     position: fixed;
@@ -81,14 +89,14 @@
     font-family: "Times New Roman", Times, serif;
     font-size: 40px;
     color: black;
-    line-height: 500px;
+    line-height: 560px;
     text-align: center;
     text-decoration: none;
 }
 
 .Bedroom {
-    width: 250px;
-    height: 280px;
+    width: 300px;
+    height: 330px;
     border-radius: 10px;
     background-color: #Ffcba4;
     position: fixed;
@@ -103,14 +111,14 @@
     font-family: "Times New Roman", Times, serif;
     font-size: 40px;
     color: black;
-    line-height: 500px;
+    line-height: 560px;
     text-align: center;
     text-decoration: none;
 }
 
 .GPS {
-    width: 250px;
-    height: 280px;
+    width: 300px;
+    height: 330px;
     border-radius: 10px;
     background-color: #Ffcba4;
     position: fixed;
@@ -125,7 +133,7 @@
     font-family: "Times New Roman", Times, serif;
     font-size: 40px;
     color: black;
-    line-height: 500px;
+    line-height: 560px;
     text-align: center;
     text-decoration: none;
 }
