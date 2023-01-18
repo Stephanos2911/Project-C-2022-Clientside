@@ -16,7 +16,7 @@ namespace UserApplication.Controllers
             _logger = logger;
         }
         
-        public IActionResult OutsideMenu()
+        public IActionResult FavorietenPagina()
         {
             return View();
         }
