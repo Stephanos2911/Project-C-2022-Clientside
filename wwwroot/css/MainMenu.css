@@ -6,7 +6,7 @@
     background-color: #Ffcba4;
     position: fixed;
     bottom: 20%;
-    left: 25%;
+    left: 10%;
     border: solid;
     border-color: black;
     background-image: url("/img/productsicon.png");
@@ -27,7 +27,7 @@
     background-color: #Ffcba4;
     position: fixed;
     bottom: 20%;
-    left: 55%;
+    left: 40%;
     border: solid;
     border-color: black;
     background-image: url("/img/FavorietZonder.png");
@@ -40,7 +40,26 @@
     line-height: 700px;
     text-align: center; 
 }
-
+.gratis {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 20%;
+    left: 70%;
+    border: solid;
+    border-color: black;
+    background-image: url("/img/gratis.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 350px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+    color: black;
+    line-height: 700px;
+    text-align: center;
+}
 .Back {
     width: 212px;
     height: 200px;
@@ -186,7 +205,11 @@ div{
     transition: 0.7s;
     background-image: url("/img/wbackarrow.png");
 }
-
+.gratis:hover {
+    color: white;
+    transition: 0.7s;
+    background-image: url("/img/wgratis.png");
+}
 .Info:hover {
     color: white;
     transition: 0.7s;

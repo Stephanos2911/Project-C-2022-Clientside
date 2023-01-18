@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/Gratis.css">
+</head>
+<body>
+<p class = "title">Gratis</p>
+<a asp-action="MainMenu" asp-controller="Application" class="Back">
+    <div>
+        Terug
+    </div>
+</a>
+
+
+<a asp-action="ProductenOverzicht" class="Mindfulness" >
+    Mindfulness
+</a>
+
+<a asp-action="ProductenOverzicht"  class="MedApp" >
+    MedApp
+</a>            
+
+<a asp-action="ProductenOverzicht" class="Wandel" >
+    Wandel.nl
+</a>
+<a asp-action="ProductenOverzicht" class="Brein" asp-route-id="4">
+    Breincoach
+</a>
+<a asp-action="ProductenOverzicht" class="Eetmeter" asp-route-id="5">
+    Eetmeter              
+</a>
+
+</body>
+</html>

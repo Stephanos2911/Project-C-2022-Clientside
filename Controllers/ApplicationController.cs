@@ -20,6 +20,10 @@ namespace UserApplication.Controllers
         {
             return View();
         }
+        public IActionResult Gratis()
+        {
+            return View();
+        }
         public IActionResult Startpagina()
         {
             return View();

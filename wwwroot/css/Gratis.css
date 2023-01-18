@@ -1,0 +1,180 @@
+.title {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 80px;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.Mindfulness {
+    width: 300px;
+    height: 330px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 50%;
+    left: 10%;
+    border: solid;
+    border-color: black;
+    background-image: url("/img/backarrow.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 180px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    color: black;
+    line-height: 560px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.MedApp {
+    width: 300px;
+    height: 330px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 50%;
+    left: 40%;
+    border: solid;
+    border-color: black;
+    background-image: url("/img/kitchenicon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 220px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    color: black;
+    line-height: 560px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.MedApp {
+    width: 300px;
+    height: 330px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 50%;
+    left: 70%;
+    border: solid;
+    border-color: black;
+    background-image: url("/img/bathroomicon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    color: black;
+    line-height: 560px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.Wandel {
+    width: 300px;
+    height: 330px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 5%;
+    left: 10%;
+    border: solid;
+    border-color: black;
+    background-image: url("/img/livingroomicon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    color: black;
+    line-height: 560px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.Brein {
+    width: 300px;
+    height: 330px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 5%;
+    left: 40%;
+    border: solid;
+    border-color: black;
+    background-image: url("/img/bedroomicon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    color: black;
+    line-height: 560px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.Eetmeter {
+    width: 300px;
+    height: 330px;
+    border-radius: 10px;
+    background-color: #Ffcba4;
+    position: fixed;
+    bottom: 5%;
+    left: 70%;
+    border: solid;
+    border-color: black;
+    background-image: url("/img/gpsicon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    color: black;
+    line-height: 560px;
+    text-align: center;
+    text-decoration: none;
+}
+/*all the hovers*/
+.Back:hover {
+    color: white;
+    transition: 0.7s;
+    background-image: url("/img/wbackarrow.png");
+}
+
+.Kitchen:hover {
+    color: white;
+    transition: 0.7s;
+    background-image: url("/img/wkitchenicon.png");
+}
+
+.Bathroom:hover {
+    color: white;
+    transition: 0.7s;
+    background-image: url("/img/wbathroomicon.png");
+}
+
+.Livingroom:hover {
+    color: white;
+    transition: 0.7s;
+    background-image: url("/img/wlivingroomicon.png");
+}
+
+.Bedroom:hover {
+    color: white;
+    transition: 0.7s;
+    background-image: url("/img/wbedroomicon.png");
+}
+
+.GPS:hover {
+    color: white;
+    transition: 0.7s;
+    background-image: url("/img/wgpsicon.png");
+}
+
+div {
+    width: 250px;
+    height: 280px;
+}
