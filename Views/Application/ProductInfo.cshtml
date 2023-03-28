@@ -1,21 +1,26 @@
 @model Product
+
 @{
-    //loads db context into this page
+    // Get the context of the database from the ViewBag
     var _context = ViewBag.Context as ApplicationDbContext;
 
-    //query for all stores which have been selected for this product
+    // Query for all stores which have been selected for this product
     var StoreLogosofProduct =
         (from store in _context.Stores
-            where store.Products.Any(x => x.Id == Model.Id)
-            select store.StoreLogo).ToList();
+         where store.Products.Any(x => x.Id == Model.Id)
+         select store.StoreLogo).ToList();
 
-
+    // Convert the logos to Base64 data URL strings
     List<string> storeimage = new List<string>();
     for (int i = 0; i < StoreLogosofProduct.Count; i++)
     {
         storeimage.Add(string.Format("data:image/jpg;base64,{0}", Convert.ToBase64String(StoreLogosofProduct[i])));
     }
+
+    // Convert the product image to a Base64 data URL string
     string ImageDataUrl = string.Format("data:image/jpg;base64,{0}", Convert.ToBase64String(Model.ProductImage));
+}
+
     
 }
 <html>
